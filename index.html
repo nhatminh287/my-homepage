@@ -9,6 +9,10 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <!-- Add Google Font: Big Shoulders Stencil Text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&display=swap" rel="stylesheet">
     <!-- Swiper CSS -->
     <link
       rel="stylesheet"
@@ -18,6 +22,46 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Update the path to point to the correct banner.js location -->
     <script src="src/js/banner.js"></script>
+    
+    <!-- Add custom CSS for text overlay -->
+    <style>
+      .slide-text {
+        font-family: 'Big Shoulders Stencil Text', sans-serif;
+        font-size: 120px;
+        font-weight: 700;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        z-index: 2;
+        text-align: center;
+        width: 100%;
+      }
+      
+      @media (max-width: 768px) {
+        .slide-text {
+          font-size: 60px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .slide-text {
+          font-size: 40px;
+        }
+      }
+      
+      .slide-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+    </style>
   </head>
   <body class="bg-gray-100">
     <!-- Sticky Header -->
@@ -46,8 +90,10 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div
-                class="w-full h-full flex items-center justify-center overflow-hidden"
+                class="w-full h-full flex items-center justify-center overflow-hidden relative"
               >
+                <div class="slide-overlay"></div>
+                <h2 class="slide-text">GO-KARTS</h2>
                 <img
                   src="images/image-1.jpg"
                   width="1512" 
@@ -59,8 +105,10 @@
             </div>
             <div class="swiper-slide">
               <div
-                class="w-full h-full flex items-center justify-center overflow-hidden"
+                class="w-full h-full flex items-center justify-center overflow-hidden relative"
               >
+                <div class="slide-overlay"></div>
+                <h2 class="slide-text">JUMPARENA</h2>
                 <img
                   src="images/image-2.png"
                   width="1512" 
@@ -72,8 +120,10 @@
             </div>
             <div class="swiper-slide">
               <div
-                class="w-full h-full flex items-center justify-center overflow-hidden"
+                class="w-full h-full flex items-center justify-center overflow-hidden relative"
               >
+                <div class="slide-overlay"></div>
+                <h2 class="slide-text">Virtuální realita</h2>
                 <img
                   src="images/image-3.jpg"
                   width="1512" 
@@ -85,8 +135,10 @@
             </div>
             <div class="swiper-slide">
               <div
-                class="w-full h-full flex items-center justify-center overflow-hidden"
+                class="w-full h-full flex items-center justify-center overflow-hidden relative"
               >
+                <div class="slide-overlay"></div>
+                <h2 class="slide-text">MULTIBALL</h2>
                 <img
                   src="images/image-4.jpg"
                   width="1512" 
@@ -98,8 +150,10 @@
             </div>
             <div class="swiper-slide">
               <div
-                class="w-full h-full flex items-center justify-center overflow-hidden"
+                class="w-full h-full flex items-center justify-center overflow-hidden relative"
               >
+                <div class="slide-overlay"></div>
+                <h2 class="slide-text">Laserová střelnice</h2>
                 <img
                   src="images/image-5.png"
                   width="1512" 
