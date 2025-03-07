@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <script src="js/loadContent.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS - load this before your banner.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Update the path to point to the correct banner.js location -->
+    <script src="src/js/banner.js"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Sticky Header -->
+    <header class="bg-white shadow-md fixed top-0 w-full z-10">
+      <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <h1 class="text-xl font-bold">My Website</h1>
+        <ul class="flex space-x-4">
+          <li>
+            <a
+              href="#"
+              onclick="loadPage('home.html')"
+              class="hover:text-blue-500"
+              >Home</a
+            >
+          </li>
+          <li><a href="#" class="hover:text-blue-500">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="content" class="mt-20">
+      <!-- Banner Section -->
+      <section class="relative w-full h-[400px] max-h-[50vh] overflow-hidden">
+        <div class="swiper mySwiper h-full">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="w-full h-full flex items-center justify-center overflow-hidden"
+              >
+                <img
+                  src="images/image-1.jpg"
+                  width="1512" 
+                  height="720"
+                  class="w-full h-full object-contain md:object-cover"
+                  alt="Slide 1"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="w-full h-full flex items-center justify-center overflow-hidden"
+              >
+                <img
+                  src="images/image-2.png"
+                  width="1512" 
+                  height="720"
+                  class="w-full h-full object-contain md:object-cover"
+                  alt="Slide 2"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="w-full h-full flex items-center justify-center overflow-hidden"
+              >
+                <img
+                  src="images/image-3.jpg"
+                  width="1512" 
+                  height="720"
+                  class="w-full h-full object-contain md:object-cover"
+                  alt="Slide 3"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="w-full h-full flex items-center justify-center overflow-hidden"
+              >
+                <img
+                  src="images/image-4.jpg"
+                  width="1512" 
+                  height="720"
+                  class="w-full h-full object-contain md:object-cover"
+                  alt="Slide 4"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="w-full h-full flex items-center justify-center overflow-hidden"
+              >
+                <img
+                  src="images/image-5.png"
+                  width="1512" 
+                  height="720"
+                  class="w-full h-full object-contain md:object-cover"
+                  alt="Slide 5"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Chỉ giữ lại một bộ nút điều hướng với style -->
+          <div class="swiper-button-next !text-white" style="background: rgba(0,0,0,0.3); padding: 30px; border-radius: 50%; transform: scale(0.6);"></div>
+          <div class="swiper-button-prev !text-white" style="background: rgba(0,0,0,0.3); padding: 30px; border-radius: 50%; transform: scale(0.6);"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        
+        <!-- Manual controls - Giữ lại nếu cần, hoặc xóa nếu không cần -->
+        <!-- <div class="absolute bottom-5 left-0 right-0 flex justify-center space-x-4 z-10">
+          <button id="prev-slide" class="bg-black bg-opacity-50 text-white px-4 py-2 rounded">Previous</button>
+          <button id="next-slide" class="bg-black bg-opacity-50 text-white px-4 py-2 rounded">Next</button>
+        </div> -->
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+      <p>Contact: contact@example.com | Phone: 123-456-789</p>
+    </footer>
+    
+    <!-- Additional script for manual controls - Xóa hoặc giữ lại tùy bạn có muốn dùng manual controls không -->
+    <!-- <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // This provides backup controls in case the Swiper navigation fails
+        document.getElementById('next-slide').addEventListener('click', function() {
+          if (typeof swiper !== 'undefined') {
+            swiper.slideNext();
+          }
+        });
+        
+        document.getElementById('prev-slide').addEventListener('click', function() {
+          if (typeof swiper !== 'undefined') {
+            swiper.slidePrev();
+          }
+        });
+      });
+    </script> -->
+  </body>
+</html>
