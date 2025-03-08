@@ -39,7 +39,7 @@
         /* Additional properties to ensure proper text wrapping if needed */
         max-width: 100%;
         line-height: 1.1;
-        
+        margin-right: auto;
         margin-top: 0;
         margin-bottom: 0;
       }
@@ -163,8 +163,8 @@
       }
 
       .custom-bullet {
-        width: 16px;
-        height: 16px;
+        width: 12px;
+        height: 12px;
         background: transparent;
         border: 1px solid #d9d9d9;
         border-radius: 999px;
@@ -175,6 +175,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.3s ease; /* Thêm transition cho mượt khi thay đổi kích thước */
       }
 
       .custom-bullet::after {
@@ -185,13 +186,15 @@
         background: #d9d9d9;
         border-radius: 50%;
         opacity: 0;
-        transition: opacity 0.3s ease;
+        transition: all 0.3s ease;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
 
       .custom-bullet-active {
+        width: 16px; /* Kích thước lớn hơn khi active */
+        height: 16px; /* Kích thước lớn hơn khi active */
         border-color: #d9d9d9;
       }
 
@@ -255,17 +258,7 @@
               >
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
-                  <div
-                    style="
-                      width: 429px;
-                      height: 144px;
-                      box-shadow: 0px 0px 10px 0px #00000040;
-                      margin-right: auto;
-                      align-items: center;
-                    "
-                  >
-                    <h2 class="slide-title">GO-KARTS</h2>
-                  </div>
+                  <h2 class="slide-title">GO-KARTS</h2>
                   <div class="info-row">
                     <p class="slide-description">
                       Enjoy an adrenaline ride in any weather. Outdoor track and
@@ -276,6 +269,75 @@
                     </button>
                   </div>
                   <div class="custom-pagination"></div>
+                </div>
+                <div
+                  class="additional-content"
+                  style="
+                    position: absolute;
+                    width: 382px;
+                    height: 150px;
+                    right: 48px;
+                    bottom: 50px;
+                    z-index: 2;
+                    border-radius: 30px;
+                    background: #29292999;
+                    backdrop-filter: blur(4px);
+                    gap: 12px;
+                  "
+                >
+                  <div>
+                    <span
+                      style="
+                        font-family: 'Big Shoulders Text', sans-serif;
+                        font-weight: 400;
+                        font-size: 32px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-align: right;
+                        text-transform: uppercase;
+                        color: #d9d9d9;
+                      "
+                    >
+                      Everyday fun for everyone
+                    </span>
+                  </div>
+                  <div>
+                    <span
+                      style="
+                        font-family: 'Space Grotesk', sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        color: #d9d9d9;
+                      "
+                    >
+                      A few kilometers from Cheb, we have built a new
+                      entertainment centre
+                      <span
+                        style="
+                          font-family: 'Space Grotesk', sans-serif;
+                          font-weight: 700;
+                          font-size: 14px;
+                          line-height: 100%;
+                          letter-spacing: 0%;
+                          background: linear-gradient(
+                            90deg,
+                            #009fe3 43.43%,
+                            #ffffff 61.46%,
+                            #e30613 79.63%
+                          );
+                          -webkit-background-clip: text;
+                          background-clip: text;
+                          color: transparent;
+                          display: inline-block;
+                        "
+                        >FUN Arena Cheb
+                      </span>
+                      for you. You will find entertainment and sports activities
+                      for children and adults here.
+                    </span>
+                  </div>
                 </div>
                 <img
                   src="images/image-1.jpg"
@@ -292,6 +354,7 @@
               <div
                 class="w-full h-full flex items-center justify-center overflow-hidden relative"
               >
+                <div class="slide-overlay"></div>
                 <div class="slide-content">
                   <h2 class="slide-title">JUMPARENA</h2>
                   <div class="info-row">
@@ -321,6 +384,7 @@
               <div
                 class="w-full h-full flex items-center justify-center overflow-hidden relative"
               >
+                <div class="slide-overlay"></div>
                 <div class="slide-content">
                   <h2 class="slide-title">Virtuální realita</h2>
                   <div class="info-row">
@@ -350,6 +414,7 @@
               <div
                 class="w-full h-full flex items-center justify-center overflow-hidden relative"
               >
+                <div class="slide-overlay"></div>
                 <div class="slide-content">
                   <h2 class="slide-title">MULTIBALL</h2>
                   <div class="info-row">
@@ -379,6 +444,7 @@
               <div
                 class="w-full h-full flex items-center justify-center overflow-hidden relative"
               >
+                <div class="slide-overlay"></div>
                 <div class="slide-content">
                   <h2 class="slide-title">Laserová střelnice</h2>
                   <div class="info-row">
