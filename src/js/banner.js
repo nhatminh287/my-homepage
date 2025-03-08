@@ -9,51 +9,73 @@ document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".mySwiper", {
       loop: true,
       autoplay: {
-        delay: 1000000,
+        delay: 500000,
         disableOnInteraction: false,
       },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
-        dynamicBullets: false, // Turn off dynamic bullets for consistent appearance
         renderBullet: function (index, className) {
           return '<span class="' + className + '"></span>';
-        }
+        },
       },
       on: {
         init: function () {
-          console.log("Swiper initialized successfully");
-          // Force pagination visibility after initialization
-          document.querySelector('.swiper-pagination').style.display = 'flex';
-          document.querySelector('.swiper-pagination').style.justifyContent = 'center';
+          console.log("Swiper initialized");
+          // Tạo custom pagination
+          createCustomPagination(this);
         },
-        slideChangeTransitionEnd: function () {
-          // Force pagination visibility after slide change
-          document.querySelector('.swiper-pagination').style.display = 'flex';
-          document.querySelector('.swiper-pagination').style.justifyContent = 'center';
-        }
+        slideChange: function () {
+          // Cập nhật custom pagination khi slide thay đổi
+          updateCustomPagination(this);
+        },
       },
     });
 
-    // Debug info
-    console.log("Swiper instance created:", swiper);
-    
-    // Make sure pagination is visible by adding a small delay
-    setTimeout(function() {
-      if (document.querySelector('.swiper-pagination')) {
-        document.querySelector('.swiper-pagination').style.display = 'flex';
-        document.querySelector('.swiper-pagination').style.justifyContent = 'center';
-      }
-    }, 500);
-    
-    // Add event listeners for the "Find out more" buttons
-    document.querySelectorAll('.find-out-more').forEach(function(button, index) {
-      button.addEventListener('click', function() {
-        console.log(`Find out more clicked for slide ${index + 1}`);
-        // Add your navigation or action logic here
+    function createCustomPagination(swiperInstance) {
+      // Đếm số lượng slides thực tế (không bao gồm slide trùng lặp do loop)
+      // Cách tính toán mới để đảm bảo đúng số lượng slides
+      const totalSlides = 5; // Hard-code số lượng slides thực tế bạn có
+
+      console.log(
+        "Creating custom pagination with " + totalSlides + " bullets"
+      );
+
+      const customPaginations = document.querySelectorAll(".custom-pagination");
+
+      customPaginations.forEach((pagination) => {
+        pagination.innerHTML = "";
+        for (let i = 0; i < totalSlides; i++) {
+          const bullet = document.createElement("span");
+          bullet.classList.add("custom-bullet");
+          if (i === swiperInstance.realIndex) {
+            bullet.classList.add("custom-bullet-active");
+          }
+          bullet.dataset.index = i;
+          pagination.appendChild(bullet);
+
+          // Thêm event listener
+          bullet.addEventListener("click", function () {
+            swiperInstance.slideToLoop(parseInt(this.dataset.index));
+          });
+        }
       });
-    });
-    
+    }
+
+    function updateCustomPagination(swiperInstance) {
+      const customPaginations = document.querySelectorAll(".custom-pagination");
+
+      customPaginations.forEach((pagination) => {
+        const bullets = pagination.querySelectorAll(".custom-bullet");
+        bullets.forEach((bullet) => {
+          if (parseInt(bullet.dataset.index) === swiperInstance.realIndex) {
+            bullet.classList.add("custom-bullet-active");
+          } else {
+            bullet.classList.remove("custom-bullet-active");
+          }
+        });
+      });
+    }
   } catch (error) {
     console.error("Error initializing Swiper:", error);
   }
