@@ -1,0 +1,28 @@
+/* .tag:after {
+
+    content: '';
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    border-radius: 50%;
+    box-shadow: 25px 25px #191919;
+
+}
+
+.tag:before {
+
+    content: '';
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    border-radius: 50%;
+    box-shadow: 25px 25px #191919;
+
+
+} */

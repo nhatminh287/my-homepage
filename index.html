@@ -9,25 +9,64 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <!-- Add Google Fonts: Big Shoulders Stencil Text and Space Grotesk -->
+    <!-- Updated Google Fonts with all necessary weights for Space Grotesk -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&family=Space+Grotesk:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&family=Big+Shoulders+Text:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Swiper CSS -->
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <!-- Swiper JS - load this before your banner.js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Update the path to point to the correct banner.js location -->
-    <script src="src/js/banner.js"></script>
-
-    <!-- Add custom CSS for text overlay and structure -->
+  href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&family=Big+Shoulders+Text:wght@400;700&family=Lexend+Deca:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+    <!-- Force font loading with additional styling -->
     <style>
+      /* Force font-family usage to ensure proper loading */
+      body,
+      button,
+      input,
+      textarea,
+      select {
+        font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Big Shoulders Text", sans-serif;
+      }
+
+      /* Ensure consistent font usage throughout the page */
+      .slide-description {
+        font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif !important;
+      }
+
+      .slide-title {
+        font-family: "Big Shoulders Stencil Text", sans-serif !important;
+      }
+
+      .find-out-more {
+        font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif !important;
+      }
+
+      /* Font loading detection helper */
+      .fonts-loaded {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+
+      /* Hide content until fonts are loaded */
+      body {
+        opacity: 0.95;
+      }
+
       .slide-title {
         font-family: "Big Shoulders Stencil Text", sans-serif;
         font-size: 120px;
@@ -225,6 +264,16 @@
         }
       }
     </style>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS - load this before your banner.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Update the path to point to the correct banner.js location -->
+    <script src="src/js/banner.js"></script>
+    <link rel="stylesheet" href="src/css/index.css" />
   </head>
   <body class="bg-gray-100">
     <!-- Sticky Header -->
@@ -270,6 +319,8 @@
                   </div>
                   <div class="custom-pagination"></div>
                 </div>
+                <!-- Remove the existing style tag with ::after pseudo element -->
+                <!-- Instead, use mask or clip-path directly on the main container -->
                 <div
                   class="additional-content"
                   style="
@@ -280,12 +331,30 @@
                     bottom: 50px;
                     z-index: 2;
                     border-radius: 30px;
-                    background: #29292999;
+                    background: rgba(41, 41, 41, 0.6);
                     backdrop-filter: blur(4px);
                     gap: 12px;
+                    padding: 8px 16px;
+                    display: flex;
+                    flex-direction: column;
+                    overflow: visible;
                   "
                 >
-                  <div>
+                  
+                  <!-- Content inside the div -->
+                  <div
+                    style="text-align: right; height: 38px; position: relative"
+                  >
+                    <!-- add flag svg here -->
+                    <img
+                      src="public/icons/flag.svg"
+                      alt="Flag"
+                      style="
+                        position: absolute;
+                        left: 0;
+                        transform: translateY(-50%) translateX(-20%);
+                      "
+                    />
                     <span
                       style="
                         font-family: 'Big Shoulders Text', sans-serif;
@@ -293,7 +362,6 @@
                         font-size: 32px;
                         line-height: 100%;
                         letter-spacing: 0%;
-                        text-align: right;
                         text-transform: uppercase;
                         color: #d9d9d9;
                       "
@@ -332,11 +400,67 @@
                           color: transparent;
                           display: inline-block;
                         "
-                        >FUN Arena Cheb
-                      </span>
+                        >FUN Arena Cheb</span
+                      >
                       for you. You will find entertainment and sports activities
                       for children and adults here.
                     </span>
+                  </div>
+                  <div
+                    class="tag"
+                    style="
+                      position: absolute;
+                      z-index: 10000000;
+                      right: 0;
+                      bottom: 0;
+                      transform: translateY(50%);
+                      background: #191919;
+                      background: linear-gradient(0deg, rgba(39, 27, 29, 1) 0%);
+                      border-top-left-radius: 16px;
+                      width: 180px;
+                      height: 60px;
+                      padding: 4px;
+                      padding-left: 12px;
+                      display: flex;
+                      gap: 10px;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                  <svg width="25" height="25" style="position: absolute; top: 0; right: 0; transform: translateY(-100%);">
+                        <path d="M25,0 L25,25 L0,25 A25,25 0 0,0 25,0 Z" fill="#191919" />
+                      </svg>
+                      <svg width="25" height="25" style="position: absolute; top: 50%; left: 0; transform: translateX(-100%) translateY(-100%);">
+                        <path d="M25,0 L25,25 L0,25 A25,25 0 0,0 25,0 Z" fill="#191919" />
+                      </svg>
+                    <div
+                      class="phone-number"
+                      style="
+                        width: 100%;
+                        height: 38px;
+                        background-color: #d9d9d9;
+                        border-radius: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                      "
+                    >
+                      
+                      <span
+                        style="
+                          font-family: 'Lexend Deca', sans-serif;
+                          font-weight: 700;
+                          font-size: 16px;
+                        "
+                        >+420737878891</span
+                      >
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="30" height="30" rx="15" fill="#E30613"/>
+                      <path d="M12.7898 10.1095L12.4766 9.40486C12.2718 8.94413 12.1694 8.71375 12.0163 8.53745C11.8244 8.31651 11.5743 8.15395 11.2944 8.06833C11.0711 8 10.819 8 10.3148 8C9.57726 8 9.20848 8 8.8989 8.14178C8.53423 8.30879 8.2049 8.67144 8.07368 9.05047C7.96228 9.37222 7.9942 9.70289 8.058 10.3642C8.73726 17.4035 12.5965 21.2627 19.6358 21.942C20.2971 22.0058 20.6278 22.0377 20.9495 21.9263C21.3286 21.7951 21.6912 21.4657 21.8583 21.1011C22 20.7915 22 20.4227 22 19.6852C22 19.1809 22 18.9289 21.9317 18.7056C21.8461 18.4257 21.6835 18.1756 21.4626 17.9837C21.2863 17.8306 21.0559 17.7282 20.5952 17.5234L19.8905 17.2102C19.3916 16.9885 19.142 16.8776 18.8886 16.8535C18.6459 16.8304 18.4013 16.8645 18.1742 16.9529C17.9369 17.0453 17.7272 17.2201 17.3077 17.5696C16.8901 17.9176 16.6814 18.0916 16.4263 18.1848C16.2001 18.2674 15.9011 18.298 15.663 18.2628C15.3942 18.2233 15.1885 18.1134 14.777 17.8934C13.4968 17.2093 12.7908 16.5033 12.1066 15.223C11.8867 14.8115 11.7767 14.6057 11.7371 14.3371C11.702 14.0989 11.7326 13.7999 11.8152 13.5738C11.9084 13.3187 12.0824 13.1099 12.4304 12.6923C12.7799 12.2729 12.9547 12.0631 13.0471 11.8258C13.1356 11.5987 13.1696 11.3541 13.1465 11.1115C13.1224 10.858 13.0115 10.6085 12.7898 10.1095Z" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+
+                    </div>
                   </div>
                 </div>
                 <img
@@ -501,5 +625,12 @@
         });
       });
     </script> -->
+    <!-- Add font loading detection script at the bottom before closing body -->
+    <script>
+      // Simple font loading detection
+      document.fonts.ready.then(function () {
+        document.body.classList.add("fonts-loaded");
+      });
+    </script>
   </body>
 </html>
