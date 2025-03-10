@@ -17,9 +17,13 @@
       rel="stylesheet"
     />
     <link
-  href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&family=Big+Shoulders+Text:wght@400;700&family=Lexend+Deca:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-  rel="stylesheet"
-/>
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&family=Big+Shoulders+Text:wght@400;700&family=Lexend+Deca:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Big+Shoulders+Stencil+Text:wght@700&family=Big+Shoulders+Text:wght@400;700&family=Lexend+Deca:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Force font loading with additional styling -->
     <style>
       /* Force font-family usage to ensure proper loading */
@@ -276,28 +280,244 @@
     <link rel="stylesheet" href="src/css/index.css" />
   </head>
   <body class="bg-gray-100">
-    <!-- Sticky Header -->
-    <header class="bg-white shadow-md fixed top-0 w-full z-10">
-      <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
-        <h1 class="text-xl font-bold">My Website</h1>
-        <ul class="flex space-x-4">
-          <li>
-            <a
-              href="#"
-              onclick="loadPage('home.html')"
-              class="hover:text-blue-500"
-              >Home</a
-            >
-          </li>
-          <li><a href="#" class="hover:text-blue-500">About</a></li>
-        </ul>
-      </nav>
-    </header>
-
+    <div
+      class="header"
+      style="
+        position: absolute;
+        width: 1420px;
+        height: 48px;
+        top: 20px;
+        left: 46px;
+        display: flex;
+        justify-content: space-between;
+        background: transparent;
+        z-index: 100000000;
+      "
+    >
+      <svg
+        width="126"
+        height="42"
+        viewBox="0 0 126 42"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M33.3632 12.1508H17.9438L19.5812 6.7525H36.297L38.0026 0.807501H4.77589L10.2341 4.01917L3.13843 28.1408H13.2361L16.1699 18.1642H31.5893L33.3632 12.1508Z"
+          fill="#009FE3"
+        />
+        <path
+          d="M125.061 0.807501H115.031L113.121 8.1875C117.829 6.00083 121.854 3.60917 124.993 0.944168L125.061 0.807501Z"
+          fill="#009FE3"
+        />
+        <path
+          d="M95.1089 7.1625H95.5183L96.951 13.9275C100.362 12.9708 103.637 11.9458 106.708 10.8525L104.524 0.807501H91.9704H87.6039H81.5999L86.7169 3.8825L82.9644 16.9342C86.5122 16.3192 89.9236 15.6358 93.1985 14.8842L95.1089 7.1625Z"
+          fill="#009FE3"
+        />
+        <path
+          d="M79.6213 28.2092H89.6508L91.4929 21.2392C88.218 21.7858 84.8066 22.2642 81.327 22.5375L79.6213 28.2092Z"
+          fill="#E30613"
+        />
+        <path
+          d="M109.505 21.8542H109.096L108.072 17.1392C105.07 18.1642 101.795 19.1208 98.2476 19.8725L100.021 28.2092H117.078L122.468 9.6225C119.807 12.0142 115.85 14.2008 111.006 16.0458L109.505 21.8542Z"
+          fill="#E30613"
+        />
+        <path
+          d="M78.1205 0.807501H68.091L62.9057 18.5742C62.8375 18.7792 62.7693 18.9158 62.7693 19.0525C66.2489 18.8475 69.6603 18.5742 73.0034 18.2325L78.1205 0.807501Z"
+          fill="#009FE3"
+        />
+        <path
+          d="M50.5564 18.9158L55.8099 0.807501H49.8059H45.7805H39.4353L44.8253 4.0875L40.5269 19.0525C43.8019 19.2575 47.0768 19.3258 50.4881 19.3942C50.4881 19.1892 50.4881 19.0525 50.5564 18.9158Z"
+          fill="#009FE3"
+        />
+        <path
+          d="M40.1176 20.6242C38.8213 26.0908 40.6634 28.4142 54.4454 28.4142C63.042 28.4142 68.1591 27.1842 70.9564 23.1525C69.3872 23.2208 67.8862 23.2208 66.3169 23.2208C56.9016 23.2208 47.6226 22.1275 40.1176 20.6242Z"
+          fill="#E30613"
+        />
+        <path
+          d="M92.1753 40.9875H94.2903L94.7679 39.3475H92.6529L92.1753 40.9875Z"
+          fill="#D9D9D9"
+        />
+        <path
+          d="M17.5344 34.0175H13.4407H12.622H10.7799L12.3491 34.9742L10.5752 41.0558H13.1678L13.7137 39.2108H15.6923C16.4428 39.2108 16.6474 39.5525 16.511 40.0992L16.2381 41.0558H18.6943L19.1036 39.6208C19.3083 38.8008 18.7625 38.3908 17.7391 38.3908V38.3225C19.6494 37.9808 19.8541 37.2975 20.1953 36.1358C20.7411 34.3592 19.7859 34.0175 17.5344 34.0175ZM17.5344 36.4775C17.3297 37.2975 17.2615 37.5708 16.1698 37.5708H14.1912L14.7371 35.6575H16.6474C17.5344 35.6575 17.6708 35.7942 17.5344 36.4775Z"
+          fill="#D9D9D9"
+        />
+        <path
+          d="M38.8897 34.0175L37.4569 39.4158H37.3887L36.1606 34.0175H32.9539H31.8623H30.293L31.5893 34.8375L29.8154 41.0558H32.3398L33.7726 35.6575H33.9091L35.0689 41.0558H39.4355L41.4823 34.0175H38.8897Z"
+          fill="#D9D9D9"
+        />
+        <path
+          d="M45.8488 34.0175H45.1665H43.1879L44.6207 34.8375L40.2542 40.9875H42.915L43.7337 39.7575H47.2134L47.3498 40.9875H49.9424L49.0555 33.9492H45.8488V34.0175ZM44.6889 38.4592L46.7358 35.3842L47.0087 38.4592H44.6889Z"
+          fill="#D9D9D9"
+        />
+        <path
+          d="M5.59465 34.0175H4.91237H2.93378L4.36656 34.8375L0 40.9875H2.66087L3.4796 39.8258H6.9592L7.09565 41.0558H9.68829L8.80134 34.0175H5.59465ZM4.43478 38.4592L6.48161 35.3842L6.75452 38.4592H4.43478Z"
+          fill="#D9D9D9"
+        />
+        <path
+          d="M22.788 34.0175H21.1506L22.5151 34.8375L20.7412 41.0558H27.7686L28.2462 39.4842H23.7432L24.1526 38.1175H28.2462L28.6556 36.8192H24.5619L24.9031 35.5208H29.2696L29.7472 34.0175H23.8114H22.788Z"
+          fill="#D9D9D9"
+        />
+        <path
+          d="M60.8589 38.4592L60.7907 38.6642C60.586 39.4158 60.3813 40.0992 59.2897 40.6458C58.2662 41.1925 57.1746 41.1925 56.083 41.1925C53.4221 41.1925 51.5117 41.1242 52.2622 38.5275L52.808 36.6825C53.4903 34.3592 55.3325 34.0175 58.1298 34.0175C60.7907 34.0175 61.9505 34.2225 61.4047 36.3408L61.3365 36.6142H58.6756L58.7438 36.3408C58.8803 35.7258 58.2662 35.6575 57.3793 35.6575C55.8783 35.6575 55.6736 35.9992 55.4007 36.9558L55.0596 38.0492C54.7184 39.0742 54.7184 39.4842 56.2194 39.4842C57.3111 39.4842 57.7886 39.4158 58.0616 38.5958L58.1298 38.3908H60.8589V38.4592Z"
+          fill="#D9D9D9"
+        />
+        <path
+          d="M70.3424 41.0558H67.7498L68.5685 38.3225H65.2253L64.4066 41.0558H61.814L63.6561 34.8375L62.2233 34.0175H66.4534L65.7029 36.6825H69.0461L69.7966 34.0175H72.3892L70.3424 41.0558Z"
+          fill="#D9D9D9"
+        />
+        <path
+          d="M82.7598 34.0175H89.5144C91.4247 34.0175 92.5164 34.2908 92.0388 35.7942C91.7659 36.6825 91.3565 37.2292 90.0602 37.4342V37.5025C91.493 37.5708 91.5612 38.1858 91.2883 39.0742C90.8107 40.7825 89.5826 41.0558 87.5358 41.0558H82.4187L84.2608 34.9058L82.7598 34.0175ZM85.4207 39.4842H87.3993C88.218 39.4842 88.6274 39.3475 88.7638 38.8008C88.9003 38.2542 88.6274 38.1175 87.8087 38.1175H85.8301L85.4207 39.4842ZM86.1712 36.8192H88.0134C88.9003 36.8192 89.1732 36.6825 89.3097 36.1358C89.4461 35.7258 89.3779 35.5892 88.6956 35.5208H86.5123L86.1712 36.8192Z"
+          fill="#D9D9D9"
+        />
+        <path
+          d="M74.9819 34.0175H73.3444L74.709 34.8375L72.9351 41.0558H79.9625L80.4401 39.4842H75.9371L76.3464 38.1175H80.4401L80.8494 36.8192H76.6876L77.0969 35.5208H81.4635L81.9411 34.0175H76.0053H74.9819Z"
+          fill="#D9D9D9"
+        />
+        <path
+          d="M104.866 38.3908L104.797 38.5958C104.593 39.3475 104.388 40.0308 103.296 40.5775C102.273 41.1242 101.181 41.0558 100.09 41.0558C97.497 41.0558 95.5867 40.9875 96.3372 38.3908L96.883 36.6142C97.5653 34.2908 99.4074 33.9492 102.205 33.9492C104.866 33.9492 106.025 34.1542 105.48 36.2725L105.411 36.5458H102.751L102.819 36.2725C102.955 35.6575 102.341 35.5892 101.454 35.5892C100.021 35.5892 99.7485 35.9308 99.4756 36.8875L99.1345 37.9808C98.7933 39.0058 98.7934 39.4158 100.294 39.4158C101.386 39.4158 101.864 39.3475 102.136 38.5275L102.205 38.3225H104.866V38.3908Z"
+          fill="#D9D9D9"
+        />
+        <path
+          d="M114.963 35.6575L109.232 39.4158V39.4842H113.871L113.394 41.1242H105.479L105.957 39.5525L111.62 35.7942V35.7258H107.39L107.867 34.0858H115.441L114.963 35.6575Z"
+          fill="#D9D9D9"
+        />
+      </svg>
+      <div style="display: flex; gap: 10px; align-items: center">
+        <svg
+          width="28"
+          height="28"
+          viewBox="0 0 28 28"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.33337 14C2.33337 15.2272 2.54391 16.4052 2.93085 17.5M2.93085 17.5H12.8334M2.93085 17.5C4.37228 21.5782 8.2616 24.5 12.8334 24.5C11.0318 24.5 9.54818 20.4166 9.35474 15.1667M15.1827 10.5H25.0851M25.0851 10.5C23.6437 6.42179 19.7544 3.49997 15.1827 3.49997C17.0504 3.49997 18.5764 7.88897 18.6773 13.4167M25.0851 10.5C25.4104 11.4201 25.6109 12.3991 25.6667 13.4167"
+            stroke="#D9D9D9"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M2.33337 6.18023C2.33337 4.8988 2.33337 4.25809 2.55198 3.7612C2.78382 3.23427 3.18342 2.81074 3.68059 2.56503C4.14942 2.33333 4.75395 2.33333 5.963 2.33333H7.00004C9.19993 2.33333 10.2999 2.33333 10.9833 3.05766C11.6667 3.78198 11.6667 4.94777 11.6667 7.27935V9.91493C11.6667 10.932 11.6667 11.4405 11.3586 11.6152C11.0505 11.79 10.6513 11.5079 9.85289 10.9438L9.73124 10.8578C9.14771 10.4455 8.85595 10.2393 8.52528 10.1332C8.19461 10.0271 7.84396 10.0271 7.14264 10.0271H5.963C4.75395 10.0271 4.14942 10.0271 3.68059 9.79543C3.18342 9.54971 2.78382 9.12619 2.55198 8.59925C2.33337 8.10237 2.33337 7.46166 2.33337 6.18023Z"
+            stroke="#D9D9D9"
+            stroke-width="1.5"
+          />
+          <path
+            d="M25.6667 20.1802C25.6667 18.8988 25.6667 18.2581 25.4481 17.7612C25.2163 17.2342 24.8167 16.8107 24.3194 16.565C23.8507 16.3333 23.2461 16.3333 22.0371 16.3333H21C18.8002 16.3333 17.7002 16.3333 17.0168 17.0577C16.3334 17.782 16.3334 18.9477 16.3334 21.2793V23.9149C16.3334 24.932 16.3334 25.4405 16.6415 25.6152C16.9495 25.79 17.3487 25.5079 18.1472 24.9438L18.2689 24.8578C18.8523 24.4455 19.1441 24.2394 19.4747 24.1332C19.8055 24.0272 20.1561 24.0272 20.8575 24.0272H22.0371C23.2461 24.0272 23.8507 24.0272 24.3194 23.7955C24.8167 23.5498 25.2163 23.1263 25.4481 22.5993C25.6667 22.1024 25.6667 21.4617 25.6667 20.1802Z"
+            stroke="#D9D9D9"
+            stroke-width="1.5"
+          />
+        </svg>
+        <svg
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="48" height="48" rx="24" fill="#292929" />
+          <path
+            d="M33.3333 24H21.6666"
+            stroke="#D9D9D9"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M33.3333 15.8333H14.6666"
+            stroke="#D9D9D9"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M33.3333 32.1667H14.6666"
+            stroke="#D9D9D9"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
     <!-- Main Content -->
     <main id="content" class="mt-20">
       <!-- Banner Section -->
-      <section class="relative w-full h-[400px] max-h-[50vh] overflow-hidden">
+      <section class="relative w-full">
+        <!-- Button "Now!" -->
+        <button
+          class="reserve"
+          style="
+            width: 241.1px;
+            height: 65px;
+            background-color: #e30613;
+            border-radius: 8px;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translateX(-50%) skew(-20deg);
+            z-index: 10;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            cursor: pointer;
+          "
+          onclick="window.location.href='https://booking.funarenacheb.cz/'"
+        >
+          <span
+            style="
+              font-family: 'Big Shoulders Display', sans-serif;
+              font-weight: 700;
+              font-size: 32px;
+              line-height: 32px;
+              color: #d9d9d9;
+              display: block;
+              transform: skew(20deg) translateX(-5%);
+              text-align: right;
+            "
+      
+            >NOW!</span
+          >
+        </button>
+
+        <!-- Button "Reserve" nằm bên ngoài và đè lên một phần của button "Now!" -->
+        <button
+          style="
+            background-color: #009fe3;
+            border-radius: 8px;
+            width: 142.6px;
+            height: 65px;
+            z-index: 100;
+            position: absolute;
+            top: 80%;
+            left: calc(
+              50% - 121px
+            ); /* Điều chỉnh vị trí để nó đè lên button Now! */
+            transform: skew(-20deg);
+            border: none;
+            outline: none;
+            box-shadow: none;
+            padding: 0;
+            cursor: pointer;
+          "
+          
+          onclick="window.location.href='https://booking.funarenacheb.cz/'"
+        >
+          <span
+            style="
+              font-family: 'Big Shoulders Display', sans-serif;
+              font-weight: 700;
+              font-size: 32px;
+              line-height: 32px;
+              color: #d9d9d9;
+              display: block;
+              transform: skew(20deg);
+            "
+            >RESERVE</span
+          >
+        </button>
         <div class="swiper mySwiper h-full">
           <div class="swiper-wrapper">
             <!-- Slide 1 -->
@@ -319,8 +539,416 @@
                   </div>
                   <div class="custom-pagination"></div>
                 </div>
-                <!-- Remove the existing style tag with ::after pseudo element -->
-                <!-- Instead, use mask or clip-path directly on the main container -->
+                <!-- additional content -->
+                <div
+                  class="additional-content"
+                  style="
+                    position: absolute;
+                    width: 350px;
+                    height: 150px;
+                    right: 48px;
+                    bottom: 50px;
+                    z-index: 2;
+                    border-radius: 26px;
+                    background: rgba(41, 41, 41, 0.6);
+                    backdrop-filter: blur(4px);
+                    gap: 12px;
+                    padding: 8px 16px;
+                    padding-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    overflow: visible;
+                  "
+                >
+                  <!-- Content inside the div -->
+                  <div
+                    style="text-align: right; height: 38px; position: relative"
+                  >
+                    <!-- add flag svg here -->
+                    <img
+                      src="public/icons/flag.svg"
+                      alt="Flag"
+                      style="
+                        position: absolute;
+                        left: 0;
+                        transform: translateY(-50%) translateX(-36%);
+                      "
+                    />
+                    <span
+                      style="
+                        font-family: 'Big Shoulders Text', sans-serif;
+                        font-weight: 400;
+                        font-size: 32px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-transform: uppercase;
+                        color: #d9d9d9;
+                      "
+                    >
+                      Everyday fun for everyone
+                    </span>
+                  </div>
+                  <div>
+                    <span
+                      style="
+                        font-family: 'Space Grotesk', sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        color: #d9d9d9;
+                      "
+                    >
+                      A few kilometers from Cheb, we have built a new
+                      entertainment centre
+                      <span
+                        style="
+                          font-family: 'Space Grotesk', sans-serif;
+                          font-weight: 700;
+                          font-size: 14px;
+                          line-height: 100%;
+                          letter-spacing: 0%;
+                          background: linear-gradient(
+                            90deg,
+                            #009fe3 43.43%,
+                            #ffffff 61.46%,
+                            #e30613 79.63%
+                          );
+                          -webkit-background-clip: text;
+                          background-clip: text;
+                          color: transparent;
+                          display: inline-block;
+                        "
+                        >FUN Arena Cheb</span
+                      >
+                      for you. You will find entertainment and sports activities
+                      for children and adults here.
+                    </span>
+                  </div>
+                  <div
+                    class="tag"
+                    style="
+                      position: absolute;
+                      z-index: 10000000;
+                      right: 0;
+                      bottom: 0;
+                      transform: translateY(50%);
+                      background: #191919;
+                      background: linear-gradient(0deg, rgba(39, 27, 29, 1) 0%);
+                      border-top-left-radius: 16px;
+                      width: 180px;
+                      height: 60px;
+                      padding: 4px;
+                      padding-left: 12px;
+                      display: flex;
+                      gap: 10px;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      style="
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        transform: translateY(-100%);
+                      "
+                    >
+                      <path
+                        d="M25,0 L25,25 L0,25 A25,25 0 0,0 25,0 Z"
+                        fill="#191919"
+                      />
+                    </svg>
+                    <svg
+                      width="25"
+                      height="25"
+                      style="
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateX(-100%) translateY(-100%);
+                      "
+                    >
+                      <path
+                        d="M25,0 L25,25 L0,25 A25,25 0 0,0 25,0 Z"
+                        fill="#191919"
+                      />
+                    </svg>
+                    <div
+                      class="phone-number"
+                      style="
+                        width: 100%;
+                        height: 38px;
+                        background-color: #d9d9d9;
+                        border-radius: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                      "
+                    >
+                      <span
+                        style="
+                          font-family: 'Lexend Deca', sans-serif;
+                          font-weight: 700;
+                          font-size: 16px;
+                        "
+                        >+420737878891</span
+                      >
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="30" height="30" rx="15" fill="#E30613" />
+                        <path
+                          d="M12.7898 10.1095L12.4766 9.40486C12.2718 8.94413 12.1694 8.71375 12.0163 8.53745C11.8244 8.31651 11.5743 8.15395 11.2944 8.06833C11.0711 8 10.819 8 10.3148 8C9.57726 8 9.20848 8 8.8989 8.14178C8.53423 8.30879 8.2049 8.67144 8.07368 9.05047C7.96228 9.37222 7.9942 9.70289 8.058 10.3642C8.73726 17.4035 12.5965 21.2627 19.6358 21.942C20.2971 22.0058 20.6278 22.0377 20.9495 21.9263C21.3286 21.7951 21.6912 21.4657 21.8583 21.1011C22 20.7915 22 20.4227 22 19.6852C22 19.1809 22 18.9289 21.9317 18.7056C21.8461 18.4257 21.6835 18.1756 21.4626 17.9837C21.2863 17.8306 21.0559 17.7282 20.5952 17.5234L19.8905 17.2102C19.3916 16.9885 19.142 16.8776 18.8886 16.8535C18.6459 16.8304 18.4013 16.8645 18.1742 16.9529C17.9369 17.0453 17.7272 17.2201 17.3077 17.5696C16.8901 17.9176 16.6814 18.0916 16.4263 18.1848C16.2001 18.2674 15.9011 18.298 15.663 18.2628C15.3942 18.2233 15.1885 18.1134 14.777 17.8934C13.4968 17.2093 12.7908 16.5033 12.1066 15.223C11.8867 14.8115 11.7767 14.6057 11.7371 14.3371C11.702 14.0989 11.7326 13.7999 11.8152 13.5738C11.9084 13.3187 12.0824 13.1099 12.4304 12.6923C12.7799 12.2729 12.9547 12.0631 13.0471 11.8258C13.1356 11.5987 13.1696 11.3541 13.1465 11.1115C13.1224 10.858 13.0115 10.6085 12.7898 10.1095Z"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="images/image-1.jpg"
+                  width="1512"
+                  height="720"
+                  class="w-full h-full object-contain md:object-cover"
+                  alt="Slide 1"
+                />
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div
+                class="w-full h-full flex items-center justify-center overflow-hidden relative"
+              >
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                  <h2 class="slide-title">JUMPARENA</h2>
+                  <div class="info-row">
+                    <p class="slide-description">
+                      Aréna se spoustou atrakcí pro děti i dospělé všech
+                      věkových kategorií. Trampolíny, lezecká stěna, ninja dráha
+                      a další atrakce.
+                    </p>
+                    <button class="find-out-more">
+                      <span>Find out more</span>
+                    </button>
+                  </div>
+                  <div class="custom-pagination"></div>
+                </div>
+                <img
+                  src="images/image-2.png"
+                  width="1512"
+                  height="720"
+                  class="w-full h-full object-contain md:object-cover"
+                  alt="Slide 2"
+                />
+              </div>
+              <div
+                class="additional-content"
+                style="
+                  position: absolute;
+                  width: 382px;
+                  height: 150px;
+                  right: 48px;
+                  bottom: 50px;
+                  z-index: 2;
+                  border-radius: 30px;
+                  background: rgba(41, 41, 41, 0.6);
+                  backdrop-filter: blur(4px);
+                  gap: 12px;
+                  padding: 8px 16px;
+                  display: flex;
+                  flex-direction: column;
+                  overflow: visible;
+                "
+              >
+                <!-- Content inside the div -->
+                <div
+                  style="text-align: right; height: 38px; position: relative"
+                >
+                  <!-- add flag svg here -->
+                  <img
+                    src="public/icons/flag.svg"
+                    alt="Flag"
+                    style="
+                      position: absolute;
+                      left: 0;
+                      transform: translateY(-50%) translateX(-20%);
+                    "
+                  />
+                  <span
+                    style="
+                      font-family: 'Big Shoulders Text', sans-serif;
+                      font-weight: 400;
+                      font-size: 32px;
+                      line-height: 100%;
+                      letter-spacing: 0%;
+                      text-transform: uppercase;
+                      color: #d9d9d9;
+                    "
+                  >
+                    Everyday fun for everyone
+                  </span>
+                </div>
+                <div>
+                  <span
+                    style="
+                      font-family: 'Space Grotesk', sans-serif;
+                      font-weight: 400;
+                      font-size: 14px;
+                      line-height: 100%;
+                      letter-spacing: 0%;
+                      color: #d9d9d9;
+                    "
+                  >
+                    A few kilometers from Cheb, we have built a new
+                    entertainment centre
+                    <span
+                      style="
+                        font-family: 'Space Grotesk', sans-serif;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        background: linear-gradient(
+                          90deg,
+                          #009fe3 43.43%,
+                          #ffffff 61.46%,
+                          #e30613 79.63%
+                        );
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                        display: inline-block;
+                      "
+                      >FUN Arena Cheb</span
+                    >
+                    for you. You will find entertainment and sports activities
+                    for children and adults here.
+                  </span>
+                </div>
+                <div
+                  class="tag"
+                  style="
+                    position: absolute;
+                    z-index: 10000000;
+                    right: 0;
+                    bottom: 0;
+                    transform: translateY(50%);
+                    background: #191919;
+                    background: linear-gradient(0deg, rgba(39, 27, 29, 1) 0%);
+                    border-top-left-radius: 16px;
+                    width: 180px;
+                    height: 60px;
+                    padding: 4px;
+                    padding-left: 12px;
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <svg
+                    width="25"
+                    height="25"
+                    style="
+                      position: absolute;
+                      top: 0;
+                      right: 0;
+                      transform: translateY(-100%);
+                    "
+                  >
+                    <path
+                      d="M25,0 L25,25 L0,25 A25,25 0 0,0 25,0 Z"
+                      fill="#191919"
+                    />
+                  </svg>
+                  <svg
+                    width="25"
+                    height="25"
+                    style="
+                      position: absolute;
+                      top: 50%;
+                      left: 0;
+                      transform: translateX(-100%) translateY(-100%);
+                    "
+                  >
+                    <path
+                      d="M25,0 L25,25 L0,25 A25,25 0 0,0 25,0 Z"
+                      fill="#191919"
+                    />
+                  </svg>
+                  <div
+                    class="phone-number"
+                    style="
+                      width: 100%;
+                      height: 38px;
+                      background-color: #d9d9d9;
+                      border-radius: 50px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      gap: 10px;
+                    "
+                  >
+                    <span
+                      style="
+                        font-family: 'Lexend Deca', sans-serif;
+                        font-weight: 700;
+                        font-size: 16px;
+                      "
+                      >+420737878891</span
+                    >
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="30" height="30" rx="15" fill="#E30613" />
+                      <path
+                        d="M12.7898 10.1095L12.4766 9.40486C12.2718 8.94413 12.1694 8.71375 12.0163 8.53745C11.8244 8.31651 11.5743 8.15395 11.2944 8.06833C11.0711 8 10.819 8 10.3148 8C9.57726 8 9.20848 8 8.8989 8.14178C8.53423 8.30879 8.2049 8.67144 8.07368 9.05047C7.96228 9.37222 7.9942 9.70289 8.058 10.3642C8.73726 17.4035 12.5965 21.2627 19.6358 21.942C20.2971 22.0058 20.6278 22.0377 20.9495 21.9263C21.3286 21.7951 21.6912 21.4657 21.8583 21.1011C22 20.7915 22 20.4227 22 19.6852C22 19.1809 22 18.9289 21.9317 18.7056C21.8461 18.4257 21.6835 18.1756 21.4626 17.9837C21.2863 17.8306 21.0559 17.7282 20.5952 17.5234L19.8905 17.2102C19.3916 16.9885 19.142 16.8776 18.8886 16.8535C18.6459 16.8304 18.4013 16.8645 18.1742 16.9529C17.9369 17.0453 17.7272 17.2201 17.3077 17.5696C16.8901 17.9176 16.6814 18.0916 16.4263 18.1848C16.2001 18.2674 15.9011 18.298 15.663 18.2628C15.3942 18.2233 15.1885 18.1134 14.777 17.8934C13.4968 17.2093 12.7908 16.5033 12.1066 15.223C11.8867 14.8115 11.7767 14.6057 11.7371 14.3371C11.702 14.0989 11.7326 13.7999 11.8152 13.5738C11.9084 13.3187 12.0824 13.1099 12.4304 12.6923C12.7799 12.2729 12.9547 12.0631 13.0471 11.8258C13.1356 11.5987 13.1696 11.3541 13.1465 11.1115C13.1224 10.858 13.0115 10.6085 12.7898 10.1095Z"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div
+                class="w-full h-full flex items-center justify-center overflow-hidden relative"
+              >
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                  <h2 class="slide-title">Virtuální realita</h2>
+                  <div class="info-row">
+                    <p class="slide-description">
+                      Díky naší virtuální realitě vstoupíte do jiného světa a
+                      poznáte nové technologie. Vyberte si z naší nabídky her a
+                      zažijte VR na vlastní kůži.
+                    </p>
+                    <button class="find-out-more">
+                      <span>Find out more</span>
+                    </button>
+                  </div>
+                  <div class="custom-pagination"></div>
+                </div>
                 <div
                   class="additional-content"
                   style="
@@ -340,7 +968,6 @@
                     overflow: visible;
                   "
                 >
-                  
                   <!-- Content inside the div -->
                   <div
                     style="text-align: right; height: 38px; position: relative"
@@ -427,12 +1054,36 @@
                       justify-content: center;
                     "
                   >
-                  <svg width="25" height="25" style="position: absolute; top: 0; right: 0; transform: translateY(-100%);">
-                        <path d="M25,0 L25,25 L0,25 A25,25 0 0,0 25,0 Z" fill="#191919" />
-                      </svg>
-                      <svg width="25" height="25" style="position: absolute; top: 50%; left: 0; transform: translateX(-100%) translateY(-100%);">
-                        <path d="M25,0 L25,25 L0,25 A25,25 0 0,0 25,0 Z" fill="#191919" />
-                      </svg>
+                    <svg
+                      width="25"
+                      height="25"
+                      style="
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        transform: translateY(-100%);
+                      "
+                    >
+                      <path
+                        d="M25,0 L25,25 L0,25 A25,25 0 0,0 25,0 Z"
+                        fill="#191919"
+                      />
+                    </svg>
+                    <svg
+                      width="25"
+                      height="25"
+                      style="
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateX(-100%) translateY(-100%);
+                      "
+                    >
+                      <path
+                        d="M25,0 L25,25 L0,25 A25,25 0 0,0 25,0 Z"
+                        fill="#191919"
+                      />
+                    </svg>
                     <div
                       class="phone-number"
                       style="
@@ -446,7 +1097,6 @@
                         gap: 10px;
                       "
                     >
-                      
                       <span
                         style="
                           font-family: 'Lexend Deca', sans-serif;
@@ -455,73 +1105,23 @@
                         "
                         >+420737878891</span
                       >
-                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="30" height="30" rx="15" fill="#E30613"/>
-                      <path d="M12.7898 10.1095L12.4766 9.40486C12.2718 8.94413 12.1694 8.71375 12.0163 8.53745C11.8244 8.31651 11.5743 8.15395 11.2944 8.06833C11.0711 8 10.819 8 10.3148 8C9.57726 8 9.20848 8 8.8989 8.14178C8.53423 8.30879 8.2049 8.67144 8.07368 9.05047C7.96228 9.37222 7.9942 9.70289 8.058 10.3642C8.73726 17.4035 12.5965 21.2627 19.6358 21.942C20.2971 22.0058 20.6278 22.0377 20.9495 21.9263C21.3286 21.7951 21.6912 21.4657 21.8583 21.1011C22 20.7915 22 20.4227 22 19.6852C22 19.1809 22 18.9289 21.9317 18.7056C21.8461 18.4257 21.6835 18.1756 21.4626 17.9837C21.2863 17.8306 21.0559 17.7282 20.5952 17.5234L19.8905 17.2102C19.3916 16.9885 19.142 16.8776 18.8886 16.8535C18.6459 16.8304 18.4013 16.8645 18.1742 16.9529C17.9369 17.0453 17.7272 17.2201 17.3077 17.5696C16.8901 17.9176 16.6814 18.0916 16.4263 18.1848C16.2001 18.2674 15.9011 18.298 15.663 18.2628C15.3942 18.2233 15.1885 18.1134 14.777 17.8934C13.4968 17.2093 12.7908 16.5033 12.1066 15.223C11.8867 14.8115 11.7767 14.6057 11.7371 14.3371C11.702 14.0989 11.7326 13.7999 11.8152 13.5738C11.9084 13.3187 12.0824 13.1099 12.4304 12.6923C12.7799 12.2729 12.9547 12.0631 13.0471 11.8258C13.1356 11.5987 13.1696 11.3541 13.1465 11.1115C13.1224 10.858 13.0115 10.6085 12.7898 10.1095Z" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="30" height="30" rx="15" fill="#E30613" />
+                        <path
+                          d="M12.7898 10.1095L12.4766 9.40486C12.2718 8.94413 12.1694 8.71375 12.0163 8.53745C11.8244 8.31651 11.5743 8.15395 11.2944 8.06833C11.0711 8 10.819 8 10.3148 8C9.57726 8 9.20848 8 8.8989 8.14178C8.53423 8.30879 8.2049 8.67144 8.07368 9.05047C7.96228 9.37222 7.9942 9.70289 8.058 10.3642C8.73726 17.4035 12.5965 21.2627 19.6358 21.942C20.2971 22.0058 20.6278 22.0377 20.9495 21.9263C21.3286 21.7951 21.6912 21.4657 21.8583 21.1011C22 20.7915 22 20.4227 22 19.6852C22 19.1809 22 18.9289 21.9317 18.7056C21.8461 18.4257 21.6835 18.1756 21.4626 17.9837C21.2863 17.8306 21.0559 17.7282 20.5952 17.5234L19.8905 17.2102C19.3916 16.9885 19.142 16.8776 18.8886 16.8535C18.6459 16.8304 18.4013 16.8645 18.1742 16.9529C17.9369 17.0453 17.7272 17.2201 17.3077 17.5696C16.8901 17.9176 16.6814 18.0916 16.4263 18.1848C16.2001 18.2674 15.9011 18.298 15.663 18.2628C15.3942 18.2233 15.1885 18.1134 14.777 17.8934C13.4968 17.2093 12.7908 16.5033 12.1066 15.223C11.8867 14.8115 11.7767 14.6057 11.7371 14.3371C11.702 14.0989 11.7326 13.7999 11.8152 13.5738C11.9084 13.3187 12.0824 13.1099 12.4304 12.6923C12.7799 12.2729 12.9547 12.0631 13.0471 11.8258C13.1356 11.5987 13.1696 11.3541 13.1465 11.1115C13.1224 10.858 13.0115 10.6085 12.7898 10.1095Z"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
                       </svg>
-
                     </div>
                   </div>
-                </div>
-                <img
-                  src="images/image-1.jpg"
-                  width="1512"
-                  height="720"
-                  class="w-full h-full object-contain md:object-cover"
-                  alt="Slide 1"
-                />
-              </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="swiper-slide">
-              <div
-                class="w-full h-full flex items-center justify-center overflow-hidden relative"
-              >
-                <div class="slide-overlay"></div>
-                <div class="slide-content">
-                  <h2 class="slide-title">JUMPARENA</h2>
-                  <div class="info-row">
-                    <p class="slide-description">
-                      Aréna se spoustou atrakcí pro děti i dospělé všech
-                      věkových kategorií. Trampolíny, lezecká stěna, ninja dráha
-                      a další atrakce.
-                    </p>
-                    <button class="find-out-more">
-                      <span>Find out more</span>
-                    </button>
-                  </div>
-                  <div class="custom-pagination"></div>
-                </div>
-                <img
-                  src="images/image-2.png"
-                  width="1512"
-                  height="720"
-                  class="w-full h-full object-contain md:object-cover"
-                  alt="Slide 2"
-                />
-              </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="swiper-slide">
-              <div
-                class="w-full h-full flex items-center justify-center overflow-hidden relative"
-              >
-                <div class="slide-overlay"></div>
-                <div class="slide-content">
-                  <h2 class="slide-title">Virtuální realita</h2>
-                  <div class="info-row">
-                    <p class="slide-description">
-                      Díky naší virtuální realitě vstoupíte do jiného světa a
-                      poznáte nové technologie. Vyberte si z naší nabídky her a
-                      zažijte VR na vlastní kůži.
-                    </p>
-                    <button class="find-out-more">
-                      <span>Find out more</span>
-                    </button>
-                  </div>
-                  <div class="custom-pagination"></div>
                 </div>
                 <img
                   src="images/image-3.jpg"
@@ -553,6 +1153,180 @@
                   </div>
                   <div class="custom-pagination"></div>
                 </div>
+                <div
+                  class="additional-content"
+                  style="
+                    position: absolute;
+                    width: 382px;
+                    height: 150px;
+                    right: 48px;
+                    bottom: 50px;
+                    z-index: 2;
+                    border-radius: 30px;
+                    background: rgba(41, 41, 41, 0.6);
+                    backdrop-filter: blur(4px);
+                    gap: 12px;
+                    padding: 8px 16px;
+                    display: flex;
+                    flex-direction: column;
+                    overflow: visible;
+                  "
+                >
+                  <!-- Content inside the div -->
+                  <div
+                    style="text-align: right; height: 38px; position: relative"
+                  >
+                    <!-- add flag svg here -->
+                    <img
+                      src="public/icons/flag.svg"
+                      alt="Flag"
+                      style="
+                        position: absolute;
+                        left: 0;
+                        transform: translateY(-50%) translateX(-20%);
+                      "
+                    />
+                    <span
+                      style="
+                        font-family: 'Big Shoulders Text', sans-serif;
+                        font-weight: 400;
+                        font-size: 32px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-transform: uppercase;
+                        color: #d9d9d9;
+                      "
+                    >
+                      Everyday fun for everyone
+                    </span>
+                  </div>
+                  <div>
+                    <span
+                      style="
+                        font-family: 'Space Grotesk', sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        color: #d9d9d9;
+                      "
+                    >
+                      A few kilometers from Cheb, we have built a new
+                      entertainment centre
+                      <span
+                        style="
+                          font-family: 'Space Grotesk', sans-serif;
+                          font-weight: 700;
+                          font-size: 14px;
+                          line-height: 100%;
+                          letter-spacing: 0%;
+                          background: linear-gradient(
+                            90deg,
+                            #009fe3 43.43%,
+                            #ffffff 61.46%,
+                            #e30613 79.63%
+                          );
+                          -webkit-background-clip: text;
+                          background-clip: text;
+                          color: transparent;
+                          display: inline-block;
+                        "
+                        >FUN Arena Cheb</span
+                      >
+                      for you. You will find entertainment and sports activities
+                      for children and adults here.
+                    </span>
+                  </div>
+                  <div
+                    class="tag"
+                    style="
+                      position: absolute;
+                      z-index: 10000000;
+                      right: 0;
+                      bottom: 0;
+                      transform: translateY(50%);
+                      background: #191919;
+                      background: linear-gradient(0deg, rgba(39, 27, 29, 1) 0%);
+                      border-top-left-radius: 16px;
+                      width: 180px;
+                      height: 60px;
+                      padding: 4px;
+                      padding-left: 12px;
+                      display: flex;
+                      gap: 10px;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      style="
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        transform: translateY(-100%);
+                      "
+                    >
+                      <path
+                        d="M25,0 L25,25 L0,25 A25,25 0 0,0 25,0 Z"
+                        fill="#191919"
+                      />
+                    </svg>
+                    <svg
+                      width="25"
+                      height="25"
+                      style="
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateX(-100%) translateY(-100%);
+                      "
+                    >
+                      <path
+                        d="M25,0 L25,25 L0,25 A25,25 0 0,0 25,0 Z"
+                        fill="#191919"
+                      />
+                    </svg>
+                    <div
+                      class="phone-number"
+                      style="
+                        width: 100%;
+                        height: 38px;
+                        background-color: #d9d9d9;
+                        border-radius: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                      "
+                    >
+                      <span
+                        style="
+                          font-family: 'Lexend Deca', sans-serif;
+                          font-weight: 700;
+                          font-size: 16px;
+                        "
+                        >+420737878891</span
+                      >
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="30" height="30" rx="15" fill="#E30613" />
+                        <path
+                          d="M12.7898 10.1095L12.4766 9.40486C12.2718 8.94413 12.1694 8.71375 12.0163 8.53745C11.8244 8.31651 11.5743 8.15395 11.2944 8.06833C11.0711 8 10.819 8 10.3148 8C9.57726 8 9.20848 8 8.8989 8.14178C8.53423 8.30879 8.2049 8.67144 8.07368 9.05047C7.96228 9.37222 7.9942 9.70289 8.058 10.3642C8.73726 17.4035 12.5965 21.2627 19.6358 21.942C20.2971 22.0058 20.6278 22.0377 20.9495 21.9263C21.3286 21.7951 21.6912 21.4657 21.8583 21.1011C22 20.7915 22 20.4227 22 19.6852C22 19.1809 22 18.9289 21.9317 18.7056C21.8461 18.4257 21.6835 18.1756 21.4626 17.9837C21.2863 17.8306 21.0559 17.7282 20.5952 17.5234L19.8905 17.2102C19.3916 16.9885 19.142 16.8776 18.8886 16.8535C18.6459 16.8304 18.4013 16.8645 18.1742 16.9529C17.9369 17.0453 17.7272 17.2201 17.3077 17.5696C16.8901 17.9176 16.6814 18.0916 16.4263 18.1848C16.2001 18.2674 15.9011 18.298 15.663 18.2628C15.3942 18.2233 15.1885 18.1134 14.777 17.8934C13.4968 17.2093 12.7908 16.5033 12.1066 15.223C11.8867 14.8115 11.7767 14.6057 11.7371 14.3371C11.702 14.0989 11.7326 13.7999 11.8152 13.5738C11.9084 13.3187 12.0824 13.1099 12.4304 12.6923C12.7799 12.2729 12.9547 12.0631 13.0471 11.8258C13.1356 11.5987 13.1696 11.3541 13.1465 11.1115C13.1224 10.858 13.0115 10.6085 12.7898 10.1095Z"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
                 <img
                   src="images/image-4.jpg"
                   width="1512"
@@ -582,6 +1356,180 @@
                     </button>
                   </div>
                   <div class="custom-pagination"></div>
+                </div>
+                <div
+                  class="additional-content"
+                  style="
+                    position: absolute;
+                    width: 382px;
+                    height: 150px;
+                    right: 48px;
+                    bottom: 50px;
+                    z-index: 2;
+                    border-radius: 30px;
+                    background: rgba(41, 41, 41, 0.6);
+                    backdrop-filter: blur(4px);
+                    gap: 12px;
+                    padding: 8px 16px;
+                    display: flex;
+                    flex-direction: column;
+                    overflow: visible;
+                  "
+                >
+                  <!-- Content inside the div -->
+                  <div
+                    style="text-align: right; height: 38px; position: relative"
+                  >
+                    <!-- add flag svg here -->
+                    <img
+                      src="public/icons/flag.svg"
+                      alt="Flag"
+                      style="
+                        position: absolute;
+                        left: 0;
+                        transform: translateY(-50%) translateX(-20%);
+                      "
+                    />
+                    <span
+                      style="
+                        font-family: 'Big Shoulders Text', sans-serif;
+                        font-weight: 400;
+                        font-size: 32px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-transform: uppercase;
+                        color: #d9d9d9;
+                      "
+                    >
+                      Everyday fun for everyone
+                    </span>
+                  </div>
+                  <div>
+                    <span
+                      style="
+                        font-family: 'Space Grotesk', sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        color: #d9d9d9;
+                      "
+                    >
+                      A few kilometers from Cheb, we have built a new
+                      entertainment centre
+                      <span
+                        style="
+                          font-family: 'Space Grotesk', sans-serif;
+                          font-weight: 700;
+                          font-size: 14px;
+                          line-height: 100%;
+                          letter-spacing: 0%;
+                          background: linear-gradient(
+                            90deg,
+                            #009fe3 43.43%,
+                            #ffffff 61.46%,
+                            #e30613 79.63%
+                          );
+                          -webkit-background-clip: text;
+                          background-clip: text;
+                          color: transparent;
+                          display: inline-block;
+                        "
+                        >FUN Arena Cheb</span
+                      >
+                      for you. You will find entertainment and sports activities
+                      for children and adults here.
+                    </span>
+                  </div>
+                  <div
+                    class="tag"
+                    style="
+                      position: absolute;
+                      z-index: 10000000;
+                      right: 0;
+                      bottom: 0;
+                      transform: translateY(50%);
+                      background: #191919;
+                      background: linear-gradient(0deg, rgba(39, 27, 29, 1) 0%);
+                      border-top-left-radius: 16px;
+                      width: 180px;
+                      height: 60px;
+                      padding: 4px;
+                      padding-left: 12px;
+                      display: flex;
+                      gap: 10px;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      style="
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        transform: translateY(-100%);
+                      "
+                    >
+                      <path
+                        d="M25,0 L25,25 L0,25 A25,25 0 0,0 25,0 Z"
+                        fill="#191919"
+                      />
+                    </svg>
+                    <svg
+                      width="25"
+                      height="25"
+                      style="
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateX(-100%) translateY(-100%);
+                      "
+                    >
+                      <path
+                        d="M25,0 L25,25 L0,25 A25,25 0 0,0 25,0 Z"
+                        fill="#191919"
+                      />
+                    </svg>
+                    <div
+                      class="phone-number"
+                      style="
+                        width: 100%;
+                        height: 38px;
+                        background-color: #d9d9d9;
+                        border-radius: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                      "
+                    >
+                      <span
+                        style="
+                          font-family: 'Lexend Deca', sans-serif;
+                          font-weight: 700;
+                          font-size: 16px;
+                        "
+                        >+420737878891</span
+                      >
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="30" height="30" rx="15" fill="#E30613" />
+                        <path
+                          d="M12.7898 10.1095L12.4766 9.40486C12.2718 8.94413 12.1694 8.71375 12.0163 8.53745C11.8244 8.31651 11.5743 8.15395 11.2944 8.06833C11.0711 8 10.819 8 10.3148 8C9.57726 8 9.20848 8 8.8989 8.14178C8.53423 8.30879 8.2049 8.67144 8.07368 9.05047C7.96228 9.37222 7.9942 9.70289 8.058 10.3642C8.73726 17.4035 12.5965 21.2627 19.6358 21.942C20.2971 22.0058 20.6278 22.0377 20.9495 21.9263C21.3286 21.7951 21.6912 21.4657 21.8583 21.1011C22 20.7915 22 20.4227 22 19.6852C22 19.1809 22 18.9289 21.9317 18.7056C21.8461 18.4257 21.6835 18.1756 21.4626 17.9837C21.2863 17.8306 21.0559 17.7282 20.5952 17.5234L19.8905 17.2102C19.3916 16.9885 19.142 16.8776 18.8886 16.8535C18.6459 16.8304 18.4013 16.8645 18.1742 16.9529C17.9369 17.0453 17.7272 17.2201 17.3077 17.5696C16.8901 17.9176 16.6814 18.0916 16.4263 18.1848C16.2001 18.2674 15.9011 18.298 15.663 18.2628C15.3942 18.2233 15.1885 18.1134 14.777 17.8934C13.4968 17.2093 12.7908 16.5033 12.1066 15.223C11.8867 14.8115 11.7767 14.6057 11.7371 14.3371C11.702 14.0989 11.7326 13.7999 11.8152 13.5738C11.9084 13.3187 12.0824 13.1099 12.4304 12.6923C12.7799 12.2729 12.9547 12.0631 13.0471 11.8258C13.1356 11.5987 13.1696 11.3541 13.1465 11.1115C13.1224 10.858 13.0115 10.6085 12.7898 10.1095Z"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
                 <img
                   src="images/image-5.png"
