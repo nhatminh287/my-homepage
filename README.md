@@ -17,7 +17,6 @@ The project is a responsive website featuring:
 
 ```
 .
-├── css/               # Custom CSS files
 ├── public/            # Static assets
 │   ├── icons/         # SVG icons
 │   └── images/        # Images for the website
