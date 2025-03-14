@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".mySwiper", {
       loop: true,
       autoplay: {
-        delay: 500000,
+        delay: 4000,
         disableOnInteraction: false,
       },
       pagination: {
@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function createCustomPagination(swiperInstance) {
       // Đếm số lượng slides thực tế (không bao gồm slide trùng lặp do loop)
-      // Cách tính toán mới để đảm bảo đúng số lượng slides
-      const totalSlides = 5; // Hard-code số lượng slides thực tế bạn có
+      
+      const totalSlides = 5; // Hard-code số lượng slides thực tế đang có
 
       console.log(
         "Creating custom pagination with " + totalSlides + " bullets"

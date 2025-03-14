@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website</title>
-    <script src="js/loadContent.js" defer></script>
+
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css"
       rel="stylesheet"
@@ -115,18 +115,17 @@
           style="background: radial-gradient(50% 50% at 50% 50%, rgba(0, 159, 227, 0.5) 0%, rgba(227, 6, 19, 0.5) 100%);">
         </div>
 
-        <!-- flag - hidden on small devices -->
+        <!-- flag-->
         <img
           src="/icons/flag.svg"
           alt="Flag"
           class="hidden lg:block absolute md:right-[360px] md:bottom-[168px] z-50"
         />
 
-        <!-- additional content - responsive size and positioning -->
+        <!-- additional content -->
         <div
           class="additional-content absolute w-[90%] sm:w-[380px] right-[5%] sm:right-[48px] bottom-[80px] sm:bottom-[50px] z-20 rounded-2xl md:rounded-[24px] bg-[rgba(41,41,41,0.6)] backdrop-blur-[4px] gap-3 md:gap-[12px] px-4 py-4 md:pb-[20px] md:pt-[8px] md:pr-[16px] md:pl-[14px] pt-3  lg:flex lg:flex-col hidden overflow-visible"
         >
-          <!-- Content inside the div -->
           <div class="text-right h-auto md:h-[38px] relative">
             <span
               class="font-['Big_Shoulders_Text'] font-normal text-xl sm:text-2xl md:text-3xl leading-tight uppercase text-[#d9d9d9]"
@@ -149,7 +148,7 @@
           </div>
         </div>
 
-        <!-- phone number - responsive positioning -->
+        <!-- phone number -->
         <div
           class="phone-number absolute bottom-[10px] sm:bottom-[31px] right-[5%] sm:right-[53px] z-50 w-[178px] h-[38px] bg-[#d9d9d9] rounded-[50px] lg:flex hidden items-center justify-center gap-2 sm:gap-[10px] px-3 sm:px-4 sm:pl-[12px]"
         >
@@ -159,7 +158,7 @@
           <img src="/icons/phone-red.svg" alt="">
         </div>
 
-        <!-- Button "Reserve" - responsive positioning and sizing -->
+        <!-- Button "Reserve" -->
         <button
           class="lg:block hidden absolute bottom-[60px] md:top-[662px] left-[calc(40%_-_60px)] md:left-[calc(50%_-_121px)] z-[100] bg-[#009fe3] rounded-lg w-[100px] md:w-[142.6px] h-[45px] md:h-[65px] border-0 outline-none shadow-none p-0 cursor-pointer transform -skew-x-[29.45deg]"
           onclick="window.location.href='https://booking.funarenacheb.cz/'"
@@ -169,7 +168,7 @@
           >RESERVE</span>
         </button>
 
-        <!-- Button "Now!" - responsive positioning and sizing -->
+        <!-- Button "Now!" -->
         <button
           class="reserve lg:block hidden absolute bottom-[60px] md:top-[662px] left-[40%] md:left-[50%] z-[10] bg-[#e30613] rounded-lg w-[180px] md:w-[241.1px] h-[45px] md:h-[65px] border-0 outline-none shadow-none px-2 md:px-[10px] cursor-pointer transform -translate-x-1/2 -skew-x-[29.45deg]"
           onclick="window.location.href='https://booking.funarenacheb.cz/'"
@@ -346,110 +345,110 @@
       </section>
       <!-- Registration section -->
       <section class="relative w-full h-auto min-h-[720px] px-6 py-[50px] sm:py-[75px] lg:py-[100px] bg-[#191919]">
-  <div class="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-20 w-[90%] sm:w-[80%] xl:w-[1280px] mx-auto h-full items-start lg:items-center justify-center">
-    <!-- Left content - heading and description -->
-    <div class="flex flex-col gap-5 sm:gap-8 w-full md:w-[40%] xl:w-[556px] mb-8 lg:mb-auto">
-      <!-- Responsive Heading -->
-      <h2 class="font-['Big_Shoulders_Text'] font-bold text-4xl sm:text-5xl md:text-6xl xl:text-[72px] text-[#d9d9d9] uppercase leading-none">
-        Registration
-      </h2>
-      
-      <!-- Responsive Paragraph -->
-      <p class="font-['Space_Grotesk'] font-normal text-sm sm:text-base text-[#d9d9d9] uppercase leading-relaxed sm:leading-[150%]">
-        For organizational and security reasons, every visitor to the FUN
-        arena Cheb must register before entering the attraction. At the
-        reception, your registration will be completed and you will
-        receive a loyalty card which you will use for our services.
-      </p>
-    </div>
-    
-    <!-- Step section -->
-<div class="flex flex-col gap-8 sm:gap-12 xl:w-[634px] w-full sm:w-[90%]">
-  <!-- Step 1 -->
-  <div class="flex flex-col gap-2">
-    <div class="flex gap-2 xl:w-[603.64px] w-[100%] h-[64px]" style="transform: skew(-25.08deg)">
-      <button class="xl:w-[49.5px] w-[10%] h-[50px] mt-[14px] rounded-lg" style="background: #29292980">
-        <span class="font-['Space_Grotesk'] font-bold text-3xl sm:text-4xl md:text-5xl xl:text-[72px] text-[#009fe3] block leading-none sm:leading-[50px]" style="transform: skew(25.08deg)">
-          1
-        </span>
-      </button>
-      <div class="rounded-lg flex-1 px-4 sm:px-7 flex items-center" style="background: #292929">
-        <span class="font-['Space_Grotesk'] font-bold text-lg sm:text-xl lg:text-2xl xl:text-[24px] text-[#d9d9d9] block" style="transform: skew(25.08deg)">
-          Choose an Attraction
-        </span>
-      </div>
-    </div>
-    <!-- Step 1 description -->
-    <div class="pl-[50px] sm:pl-[85px]">
-      <span class="font-['Space_Grotesk'] font-normal text-sm sm:text-base text-[#d9d9d9] block text-left leading-relaxed sm:leading-[150%]">
-        Choose from the attractions of the FUN arena.
-      </span>
-    </div>
-  </div>
-  
-  <!-- Step 2 -->
-  <div class="flex flex-col gap-2">
-    <div class="flex gap-2 xl:w-[603.64px] w-[100%] h-[64px]" style="transform: skew(-25.08deg)">
-      <button class="xl:w-[49.5px] w-[10%] h-[50px] mt-[14px] rounded-lg" style="background: #29292980">
-        <span class="font-['Space_Grotesk'] font-bold text-3xl sm:text-4xl md:text-5xl xl:text-[72px] text-[#009fe3] block leading-none sm:leading-[50px]" style="transform: skew(25.08deg)">
-          2
-        </span>
-      </button>
-      <div class="rounded-lg flex-1 px-4 sm:px-7 flex items-center" style="background: #292929">
-        <div class="xl:w-[368px] w-3/5 flex justify-between items-center" style="transform: skew(25.08deg)">
-          <span class="font-['Space_Grotesk'] font-bold text-lg sm:text-xl lg:text-2xl xl:text-[24px] text-[#d9d9d9] block">
-            Register
-          </span>
-          <button class="w-[80px] sm:w-[86px] h-[26px] rounded-lg bg-[#E30613] cursor-pointer xl:relative absolute xl:right-0 -right-[50%] flex items-center justify-center">
-            <span class="font-['Space_Grotesk'] font-bold text-xs sm:text-sm xl:text-[14px] text-white" onclick="window.location.href='https://web.racefacer.com/kiosk/kartarenacheb'">
-              Click here
+        <div class="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-20 w-[90%] sm:w-[80%] xl:w-[1280px] mx-auto h-full items-start lg:items-center justify-center">
+          <!-- Left content - heading and description -->
+          <div class="flex flex-col gap-5 sm:gap-8 w-full md:w-[40%] xl:w-[556px] mb-8 lg:mb-auto">
+            <!-- Responsive Heading -->
+            <h2 class="font-['Big_Shoulders_Text'] font-bold text-4xl sm:text-5xl md:text-6xl xl:text-[72px] text-[#d9d9d9] uppercase leading-none">
+              Registration
+            </h2>
+            
+            <!-- Responsive Paragraph -->
+            <p class="font-['Space_Grotesk'] font-normal text-sm sm:text-base text-[#d9d9d9] uppercase leading-relaxed sm:leading-[150%]">
+              For organizational and security reasons, every visitor to the FUN
+              arena Cheb must register before entering the attraction. At the
+              reception, your registration will be completed and you will
+              receive a loyalty card which you will use for our services.
+            </p>
+          </div>
+          
+          <!-- Step section -->
+      <div class="flex flex-col gap-8 sm:gap-12 xl:w-[634px] w-full sm:w-[90%]">
+        <!-- Step 1 -->
+        <div class="flex flex-col gap-2">
+          <div class="flex gap-2 xl:w-[603.64px] w-[100%] h-[64px]" style="transform: skew(-25.08deg)">
+            <button class="xl:w-[49.5px] w-[10%] h-[50px] mt-[14px] rounded-lg" style="background: #29292980">
+              <span class="font-['Space_Grotesk'] font-bold text-3xl sm:text-4xl md:text-5xl xl:text-[72px] text-[#009fe3] block leading-none sm:leading-[50px]" style="transform: skew(25.08deg)">
+                1
+              </span>
+            </button>
+            <div class="rounded-lg flex-1 px-4 sm:px-7 flex items-center" style="background: #292929">
+              <span class="font-['Space_Grotesk'] font-bold text-lg sm:text-xl lg:text-2xl xl:text-[24px] text-[#d9d9d9] block" style="transform: skew(25.08deg)">
+                Choose an Attraction
+              </span>
+            </div>
+          </div>
+          <!-- Step 1 description -->
+          <div class="pl-[50px] sm:pl-[85px]">
+            <span class="font-['Space_Grotesk'] font-normal text-sm sm:text-base text-[#d9d9d9] block text-left leading-relaxed sm:leading-[150%]">
+              Choose from the attractions of the FUN arena.
             </span>
-          </button>
+          </div>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="flex flex-col gap-2">
+          <div class="flex gap-2 xl:w-[603.64px] w-[100%] h-[64px]" style="transform: skew(-25.08deg)">
+            <button class="xl:w-[49.5px] w-[10%] h-[50px] mt-[14px] rounded-lg" style="background: #29292980">
+              <span class="font-['Space_Grotesk'] font-bold text-3xl sm:text-4xl md:text-5xl xl:text-[72px] text-[#009fe3] block leading-none sm:leading-[50px]" style="transform: skew(25.08deg)">
+                2
+              </span>
+            </button>
+            <div class="rounded-lg flex-1 px-4 sm:px-7 flex items-center" style="background: #292929">
+              <div class="xl:w-[368px] w-3/5 flex justify-between items-center" style="transform: skew(25.08deg)">
+                <span class="font-['Space_Grotesk'] font-bold text-lg sm:text-xl lg:text-2xl xl:text-[24px] text-[#d9d9d9] block">
+                  Register
+                </span>
+                <button class="w-[80px] sm:w-[86px] h-[26px] rounded-lg bg-[#E30613] cursor-pointer xl:relative absolute xl:right-0 -right-[50%] flex items-center justify-center">
+                  <span class="font-['Space_Grotesk'] font-bold text-xs sm:text-sm xl:text-[14px] text-white" onclick="window.location.href='https://web.racefacer.com/kiosk/kartarenacheb'">
+                    Click here
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Step 2 description -->
+          <div class="relative pl-[50px] sm:pl-[85px]">
+            <span class="font-['Space_Grotesk'] font-normal text-sm sm:text-base text-[#d9d9d9] block text-left leading-relaxed sm:leading-[150%] w-full sm:w-[368px]">
+              You can register at the reception or by clicking the button
+              above from the comfort of your home.
+            </span>
+            <img
+              src="/images/qr.png"
+              alt="QR code"
+              width="128"
+              height="128"
+              class="absolute bottom-0 rounded-xl right-[10px] sm:right-[47px] xl:block hidden"
+            />
+          </div>
+        </div>
+        
+        <!-- Step 3 -->
+        <div class="flex flex-col gap-2">
+          <div class="flex gap-2 xl:w-[603.64px] w-[100%] h-[64px]" style="transform: skew(-25.08deg)">
+            <button class="xl:w-[49.5px] w-[10%] h-[50px] mt-[14px] rounded-lg" style="background: #29292980">
+              <span class="font-['Space_Grotesk'] font-bold text-3xl sm:text-4xl md:text-5xl xl:text-[72px] text-[#009fe3] block leading-none sm:leading-[50px]" style="transform: skew(25.08deg)">
+                3
+              </span>
+            </button>
+            <div class="rounded-lg flex-1 px-4 sm:px-7 flex items-center" style="background: #292929">
+              <span class="font-['Space_Grotesk'] font-bold text-lg sm:text-xl lg:text-2xl xl:text-[24px] text-[#d9d9d9] block" style="transform: skew(25.08deg)">
+                Have Fun
+              </span>
+            </div>
+          </div>
+          <!-- Step 3 description -->
+          <div class="pl-[50px] sm:pl-[85px]">
+            <span class="font-['Space_Grotesk'] font-normal text-sm sm:text-base text-[#d9d9d9] block text-left leading-relaxed sm:leading-[150%]">
+              Thank you for your online registrations. For each purchase you
+              get points, which you can apply to our services and
+              attractions then. We look forward to you!
+            </span>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Step 2 description -->
-    <div class="relative pl-[50px] sm:pl-[85px]">
-      <span class="font-['Space_Grotesk'] font-normal text-sm sm:text-base text-[#d9d9d9] block text-left leading-relaxed sm:leading-[150%] w-full sm:w-[368px]">
-        You can register at the reception or by clicking the button
-        above from the comfort of your home.
-      </span>
-      <img
-        src="/images/qr.png"
-        alt="QR code"
-        width="128"
-        height="128"
-        class="absolute bottom-0 rounded-xl right-[10px] sm:right-[47px] xl:block hidden"
-      />
-    </div>
-  </div>
-  
-  <!-- Step 3 -->
-  <div class="flex flex-col gap-2">
-    <div class="flex gap-2 xl:w-[603.64px] w-[100%] h-[64px]" style="transform: skew(-25.08deg)">
-      <button class="xl:w-[49.5px] w-[10%] h-[50px] mt-[14px] rounded-lg" style="background: #29292980">
-        <span class="font-['Space_Grotesk'] font-bold text-3xl sm:text-4xl md:text-5xl xl:text-[72px] text-[#009fe3] block leading-none sm:leading-[50px]" style="transform: skew(25.08deg)">
-          3
-        </span>
-      </button>
-      <div class="rounded-lg flex-1 px-4 sm:px-7 flex items-center" style="background: #292929">
-        <span class="font-['Space_Grotesk'] font-bold text-lg sm:text-xl lg:text-2xl xl:text-[24px] text-[#d9d9d9] block" style="transform: skew(25.08deg)">
-          Have Fun
-        </span>
-      </div>
-    </div>
-    <!-- Step 3 description -->
-    <div class="pl-[50px] sm:pl-[85px]">
-      <span class="font-['Space_Grotesk'] font-normal text-sm sm:text-base text-[#d9d9d9] block text-left leading-relaxed sm:leading-[150%]">
-        Thank you for your online registrations. For each purchase you
-        get points, which you can apply to our services and
-        attractions then. We look forward to you!
-      </span>
-    </div>
-  </div>
-</div>
-  </div>
-</section>
+        </div>
+      </section>
       <!-- Video section -->
       <section class="relative w-full px-6 bg-[#191919]">
         <div class="w-[80%] xl:w-[1280px] mx-auto flex flex-col gap-12 h-full">
