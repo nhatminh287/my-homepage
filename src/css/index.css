@@ -2,73 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Base slide content positioning */
+.slide-content {
+  position: absolute;
+  bottom: 30px;
+  left: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  z-index: 2;
+  width: 90%;
+  max-width: 1200px;
+  padding-right: 20px;
+}
+
+/* Responsive slide title */
 .slide-title {
   font-family: "Big Shoulders Stencil Text", sans-serif;
-  font-size: 120px;
   font-weight: 700;
   color: white;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   width: fit-content;
-  height: fit-content;
-  /* Additional properties to ensure proper text wrapping if needed */
   max-width: 100%;
   line-height: 1.1;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  /* Mobile default */
+  font-size: 40px;
 }
 
-.slide-content {
-  position: absolute;
-  bottom: 50px;
-  left: 48px;
-  /* transform: translate(-50%, -50%); */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 24px;
-  z-index: 2;
-  width: 90%;
-  max-width: 1200px;
-}
-
+/* Info row layout */
 .info-row {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   margin-right: auto;
-  width: 552.25px;
+  width: 100%;
+  max-width: 552px;
   gap: 12px;
 }
 
+/* Responsive slide description */
 .slide-description {
   font-family: "Space Grotesk", sans-serif;
-  width: 347px;
   font-weight: 400;
-  font-size: 14px;
   color: #d9d9d9;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 300px;
+  /* Mobile default */
+  font-size: 12px;
 }
 
+/* Find out more button - smaller for mobile */
 .find-out-more {
-  margin-top: 5px;
+  margin-top: 0;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
-  font-size: 16px;
   color: #d9d9d9;
   background-color: transparent;
-  height: 49px;
-  /* width: 162.25px; */
-  width: calc(162.25px - 49px * 0.36397);
+  height: 34px; /* Decreased height for smallest screens */
+  width: calc(115px - 34px * 0.36397); /* Decreased width for smallest screens */
   border: 1px solid #d9d9d9;
-  border-radius: 8px;
+  border-radius: 6px; /* Smaller radius for small screens */
   cursor: pointer;
   transition: all 0.3s ease;
   white-space: nowrap;
-  transform: skew(-25.08deg) translateX(17.83px);
+  transform: skew(-25.08deg) translateX(12px); /* Adjusted transform */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,11 +82,11 @@
   background-color: rgba(217, 217, 217, 0.2);
 }
 
-/* This will make the text appear straight while the button itself is skewed */
+/* Smaller text for mobile */
 .find-out-more span {
   display: inline-block;
   transform: skew(25.08deg);
-  /* Reverse the skew for the text */
+  font-size: 10px; /* Smaller font for mobile */
 }
 
 .pagination-container {
@@ -99,51 +101,22 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(25, 25, 25, 0) 52.85%,
-    #191919 88.21%
-  );
+  background: linear-gradient(180deg, rgba(25, 25, 25, 0) 52.85%, #191919 100%);
   z-index: 1;
-}
-
-.swiper-pagination {
-  position: absolute !important;
-  bottom: 50px !important;
-  left: 48px !important;
-  width: 100% !important;
-  z-index: 10 !important;
-  display: flex !important;
-  justify-content: flex-start !important;
-}
-
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background: rgba(255, 255, 255, 0.5);
-  opacity: 0.7;
-  margin: 0 5px !important;
-}
-
-.swiper-pagination-bullet-active {
-  background: white;
-  opacity: 1;
 }
 
 .custom-pagination {
   display: flex;
   margin-right: auto;
-
   gap: 8px;
-  /* Điều chỉnh khoảng cách giữa các bullets */
   align-items: center;
   height: 16px;
-  /* Đảm bảo chiều cao đồng nhất */
+  margin-top: 5px;
 }
 
 .custom-bullet {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   background: transparent;
   border: 1px solid #d9d9d9;
   border-radius: 999px;
@@ -155,14 +128,13 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-  /* Thêm transition cho mượt khi thay đổi kích thước */
 }
 
 .custom-bullet::after {
   content: "";
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   background: #d9d9d9;
   border-radius: 50%;
   opacity: 0;
@@ -173,18 +145,185 @@
 }
 
 .custom-bullet-active {
-  width: 16px;
-  /* Kích thước lớn hơn khi active */
-  height: 16px;
-  /* Kích thước lớn hơn khi active */
+  width: 12px;
+  height: 12px;
   border-color: #d9d9d9;
 }
 
 .custom-bullet-active::after {
   opacity: 1;
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   background: #d9d9d9;
+}
+
+/* Small screens (sm) */
+@media (min-width: 640px) {
+  .slide-content {
+    bottom: 40px;
+    left: 36px;
+    gap: 16px;
+  }
+  
+  .slide-title {
+    font-size: 60px;
+  }
+  
+  .info-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .slide-description {
+    font-size: 13px;
+    max-width: 320px;
+  }
+  
+  .find-out-more {
+    height: 44px;
+    width: calc(152.25px - 44px * 0.36397);
+    border-radius: 8px;
+    transform: skew(-25.08deg) translateX(17.83px);
+  }
+  
+  .find-out-more span {
+    font-size: 14px;
+  }
+  
+  .custom-bullet {
+    width: 11px;
+    height: 11px;
+  }
+  
+  .custom-bullet-active {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .custom-bullet-active::after {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Medium screens (md) */
+@media (min-width: 768px) {
+  .slide-content {
+    bottom: 50px;
+    left: 48px;
+    gap: 20px;
+  }
+  
+  .slide-title {
+    font-size: 80px;
+  }
+  
+  .slide-description {
+    font-size: 14px;
+    max-width: 347px;
+  }
+  
+  .find-out-more {
+    height: 46px;
+    width: calc(158.25px - 46px * 0.36397);
+    margin-top: 5px;
+  }
+  
+  .find-out-more span {
+    font-size: 15px;
+  }
+  
+  .custom-bullet {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .custom-bullet-active {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .custom-bullet-active::after {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* Large screens (lg) */
+@media (min-width: 1024px) {
+  .slide-content {
+    bottom: 50px;
+    gap: 24px;
+  }
+  
+  .slide-title {
+    font-size: 100px;
+  }
+  
+  .slide-description {
+    max-width: 347px;
+  }
+  
+  .find-out-more {
+    height: 49px;
+    width: calc(162.25px - 49px * 0.36397);
+  }
+  
+  .find-out-more span {
+    font-size: 16px;
+  }
+}
+
+/* Extra large screens (xl) */
+@media (min-width: 1280px) {
+  .slide-title {
+    font-size: 120px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 375px) {
+  .slide-content {
+    bottom: 20px;
+    left: 16px;
+    gap: 8px;
+  }
+  
+  .slide-title {
+    font-size: 32px;
+  }
+  
+  .slide-description {
+    font-size: 11px;
+    max-width: 260px;
+  }
+  
+  .find-out-more {
+    height: 30px;
+    width: calc(100px - 30px * 0.36397);
+    border-radius: 5px;
+    transform: skew(-25.08deg) translateX(10px);
+  }
+  
+  .find-out-more span {
+    font-size: 9px;
+  }
+  
+  .custom-bullet {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .custom-bullet-active {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .custom-bullet-active::after {
+    width: 6px;
+    height: 6px;
+  }
 }
 
 .play-button {
@@ -259,23 +398,53 @@
   mask-repeat: no-repeat;
 }
 
-@media (max-width: 768px) {
-  .slide-title {
-    font-size: 60px;
-  }
+/* Swiper pagination styles - These need to stay for the slider functionality */
+.swiper-pagination {
+  position: absolute !important;
+  bottom: 50px !important;
+  left: 48px !important;
+  width: 100% !important;
+  z-index: 10 !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+}
 
-  .slide-content {
-    gap: 16px;
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.7;
+  margin: 0 5px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: white;
+  opacity: 1;
+}
+
+/* Responsive swiper pagination */
+@media (max-width: 640px) {
+  .swiper-pagination {
+    bottom: 30px !important;
+    left: 24px !important;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px !important;
   }
 }
 
-@media (max-width: 480px) {
-  .slide-title {
-    font-size: 40px;
+@media (max-width: 375px) {
+  .swiper-pagination {
+    bottom: 20px !important;
+    left: 16px !important;
   }
-
-  .info-row {
-    flex-direction: column;
-    gap: 8px;
+  
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    margin: 0 3px !important;
   }
 }

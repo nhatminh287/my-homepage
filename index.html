@@ -119,12 +119,12 @@
         <img
           src="/icons/flag.svg"
           alt="Flag"
-          class="hidden md:block absolute md:right-[360px] md:bottom-[168px] z-50"
+          class="hidden lg:block absolute md:right-[360px] md:bottom-[168px] z-50"
         />
 
         <!-- additional content - responsive size and positioning -->
         <div
-          class="additional-content absolute w-[90%] sm:w-[380px] right-[5%] sm:right-[48px] bottom-[80px] sm:bottom-[50px] z-20 rounded-2xl md:rounded-[24px] bg-[rgba(41,41,41,0.6)] backdrop-blur-[4px] gap-3 md:gap-[12px] px-4 py-4 md:py-[20px] md:px-[16px] pt-3 md:pt-[10px] lg:flex lg:flex-col hidden overflow-visible"
+          class="additional-content absolute w-[90%] sm:w-[380px] right-[5%] sm:right-[48px] bottom-[80px] sm:bottom-[50px] z-20 rounded-2xl md:rounded-[24px] bg-[rgba(41,41,41,0.6)] backdrop-blur-[4px] gap-3 md:gap-[12px] px-4 py-4 md:pb-[20px] md:pt-[8px] md:pr-[16px] md:pl-[14px] pt-3  lg:flex lg:flex-col hidden overflow-visible"
         >
           <!-- Content inside the div -->
           <div class="text-right h-auto md:h-[38px] relative">
@@ -345,242 +345,111 @@
         </div>
       </section>
       <!-- Registration section -->
-      <section class="relative w-full h-[720px] px-6 py-[100px] bg-[#191919]">
-        <div class="flex flex-col lg:flex-row gap-8 lg:gap-20 w-[80%] xl:w-[1280px] mx-auto h-full items-center justify-center">
-          <div class="flex flex-col gap-8 w-full md:w-[40%] xl:w-[556px] mb-auto">
-            <span
-              style="
-                font-family: Big Shoulders Text;
-                font-weight: 700;
-                font-size: 72px;
-                color: #d9d9d9;
-                text-transform: uppercase;
-                line-height: 100%;
-              "
-              >Registration
+      <section class="relative w-full h-auto min-h-[720px] px-6 py-[50px] sm:py-[75px] lg:py-[100px] bg-[#191919]">
+  <div class="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-20 w-[90%] sm:w-[80%] xl:w-[1280px] mx-auto h-full items-start lg:items-center justify-center">
+    <!-- Left content - heading and description -->
+    <div class="flex flex-col gap-5 sm:gap-8 w-full md:w-[40%] xl:w-[556px] mb-8 lg:mb-auto">
+      <!-- Responsive Heading -->
+      <h2 class="font-['Big_Shoulders_Text'] font-bold text-4xl sm:text-5xl md:text-6xl xl:text-[72px] text-[#d9d9d9] uppercase leading-none">
+        Registration
+      </h2>
+      
+      <!-- Responsive Paragraph -->
+      <p class="font-['Space_Grotesk'] font-normal text-sm sm:text-base text-[#d9d9d9] uppercase leading-relaxed sm:leading-[150%]">
+        For organizational and security reasons, every visitor to the FUN
+        arena Cheb must register before entering the attraction. At the
+        reception, your registration will be completed and you will
+        receive a loyalty card which you will use for our services.
+      </p>
+    </div>
+    
+    <!-- Step section -->
+<div class="flex flex-col gap-8 sm:gap-12 xl:w-[634px] w-full sm:w-[90%]">
+  <!-- Step 1 -->
+  <div class="flex flex-col gap-2">
+    <div class="flex gap-2 xl:w-[603.64px] w-[100%] h-[64px]" style="transform: skew(-25.08deg)">
+      <button class="xl:w-[49.5px] w-[10%] h-[50px] mt-[14px] rounded-lg" style="background: #29292980">
+        <span class="font-['Space_Grotesk'] font-bold text-3xl sm:text-4xl md:text-5xl xl:text-[72px] text-[#009fe3] block leading-none sm:leading-[50px]" style="transform: skew(25.08deg)">
+          1
+        </span>
+      </button>
+      <div class="rounded-lg flex-1 px-4 sm:px-7 flex items-center" style="background: #292929">
+        <span class="font-['Space_Grotesk'] font-bold text-lg sm:text-xl lg:text-2xl xl:text-[24px] text-[#d9d9d9] block" style="transform: skew(25.08deg)">
+          Choose an Attraction
+        </span>
+      </div>
+    </div>
+    <!-- Step 1 description -->
+    <div class="pl-[50px] sm:pl-[85px]">
+      <span class="font-['Space_Grotesk'] font-normal text-sm sm:text-base text-[#d9d9d9] block text-left leading-relaxed sm:leading-[150%]">
+        Choose from the attractions of the FUN arena.
+      </span>
+    </div>
+  </div>
+  
+  <!-- Step 2 -->
+  <div class="flex flex-col gap-2">
+    <div class="flex gap-2 xl:w-[603.64px] w-[100%] h-[64px]" style="transform: skew(-25.08deg)">
+      <button class="xl:w-[49.5px] w-[10%] h-[50px] mt-[14px] rounded-lg" style="background: #29292980">
+        <span class="font-['Space_Grotesk'] font-bold text-3xl sm:text-4xl md:text-5xl xl:text-[72px] text-[#009fe3] block leading-none sm:leading-[50px]" style="transform: skew(25.08deg)">
+          2
+        </span>
+      </button>
+      <div class="rounded-lg flex-1 px-4 sm:px-7 flex items-center" style="background: #292929">
+        <div class="xl:w-[368px] w-3/5 flex justify-between items-center" style="transform: skew(25.08deg)">
+          <span class="font-['Space_Grotesk'] font-bold text-lg sm:text-xl lg:text-2xl xl:text-[24px] text-[#d9d9d9] block">
+            Register
+          </span>
+          <button class="w-[80px] sm:w-[86px] h-[26px] rounded-lg bg-[#E30613] cursor-pointer xl:relative absolute xl:right-0 -right-[50%] flex items-center justify-center">
+            <span class="font-['Space_Grotesk'] font-bold text-xs sm:text-sm xl:text-[14px] text-white" onclick="window.location.href='https://web.racefacer.com/kiosk/kartarenacheb'">
+              Click here
             </span>
-            <span
-              style="
-                font-family: Space Grotesk;
-                font-weight: 400;
-                font-size: 16px;
-                color: #d9d9d9;
-                text-transform: uppercase;
-                line-height: 150%;
-              "
-              >For organizational and security reasons, every visitor to the FUN
-              arena Cheb must register before entering the attraction. At the
-              reception, your registration will be completed and you will
-              receive a loyalty card which you will use for our services.</span
-            >
-          </div>
-          <!-- step -->
-          <div class="flex flex-col gap-12 w-[634px]">
-            <div class="flex flex-col gap-2">
-              <div
-                class="flex gap-2 w-[603.64px] h-[64px]"
-                style="transform: skew(-25.08deg)"
-              >
-                <button
-                  class="w-[49.5px] h-[50px] mt-[14px] rounded-lg"
-                  style="background: #29292980"
-                >
-                  <span
-                    style="
-                      font-family: 'Space Grotesk', sans-serif;
-                      font-weight: 700;
-                      font-size: 72px;
-                      line-height: 50px;
-                      letter-spacing: 0%;
-                      color: #009fe3;
-                      display: block;
-                      transform: skew(25.08deg);
-                    "
-                    >1
-                  </span>
-                </button>
-                <div class="rounded-lg flex-1 px-7" style="background: #292929">
-                  <span
-                    style="
-                      font-family: 'Space Grotesk', sans-serif;
-                      font-weight: 700;
-                      font-size: 24px;
-                      line-height: 64px;
-                      letter-spacing: 0%;
-                      color: #d9d9d9;
-                      display: block;
-                      transform: skew(25.08deg);
-                    "
-                    >Choose an Attraction
-                  </span>
-                </div>
-              </div>
-              <!-- Apply left padding to match the alignment of the text above -->
-              <div class="pl-[85px]">
-                <span
-                  style="
-                    font-family: 'Space Grotesk', sans-serif;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 150%;
-                    letter-spacing: 0%;
-                    color: #d9d9d9;
-                    display: block;
-                    text-align: left;
-                  "
-                >
-                  Choose from the attractions of the FUN arena.
-                </span>
-              </div>
-            </div>
-            <div class="flex flex-col gap-2">
-              <div
-                class="flex gap-2 w-[603.64px] h-[64px]"
-                style="transform: skew(-25.08deg)"
-              >
-                <button
-                  class="w-[49.5px] h-[50px] mt-[14px] rounded-lg"
-                  style="background: #29292980"
-                >
-                  <span
-                    style="
-                      font-family: 'Space Grotesk', sans-serif;
-                      font-weight: 700;
-                      font-size: 72px;
-                      line-height: 50px;
-                      letter-spacing: 0%;
-                      color: #009fe3;
-                      display: block;
-                      transform: skew(25.08deg);
-                    "
-                    >2</span
-                  >
-                </button>
-                <div class="rounded-lg flex-1 px-7" style="background: #292929">
-                  <div
-                    class="w-[368px] flex justify-between items-center transform skew-x-[25.08deg]"
-                  >
-                    <span
-                      style="
-                        font-family: 'Space Grotesk', sans-serif;
-                        font-weight: 700;
-                        font-size: 24px;
-                        line-height: 64px;
-                        letter-spacing: 0%;
-                        color: #d9d9d9;
-                        display: block;
-                      "
-                      >Register
-                    </span>
-                    <button
-                      class="w-[86px] h-[26px] rounded-lg bg-[#E30613] transform cursor-pointer"
-                    >
-                      <span
-                        style="
-                          font-family: Space Grotesk;
-                          font-weight: 700;
-                          font-size: 14px;
-                          line-height: 100%;
-                          letter-spacing: 0%;
-                          color: #ffffff;
-                        "
-                        onclick="window.location.href='https://web.racefacer.com/kiosk/kartarenacheb'"
-                      >
-                        Click here
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Apply left padding to match the alignment of the text above -->
-              <div class="relative pl-[85px]">
-                <span
-                  style="
-                    font-family: 'Space Grotesk', sans-serif;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 150%;
-                    letter-spacing: 0%;
-                    color: #d9d9d9;
-                    display: block;
-                    text-align: left;
-                    width: 368px;
-                  "
-                >
-                  You can register at the reception or by clicking the button
-                  above from the comfort of your home.
-                </span>
-                <img
-                  src="/images/qr.png"
-                  alt="QR code"
-                  width="128"
-                  height="128"
-                  class="absolute bottom-0 rounded-xl right-[47px]"
-                />
-              </div>
-            </div>
-            <div class="flex flex-col gap-2">
-              <div
-                class="flex gap-2 w-[603.64px] h-[64px]"
-                style="transform: skew(-25.08deg)"
-              >
-                <button
-                  class="w-[49.5px] h-[50px] mt-[14px] rounded-lg"
-                  style="background: #29292980"
-                >
-                  <span
-                    style="
-                      font-family: 'Space Grotesk', sans-serif;
-                      font-weight: 700;
-                      font-size: 72px;
-                      line-height: 50px;
-                      letter-spacing: 0%;
-                      color: #009fe3;
-                      display: block;
-                      transform: skew(25.08deg);
-                    "
-                    >3</span
-                  >
-                </button>
-                <div class="rounded-lg flex-1 px-7" style="background: #292929">
-                  <span
-                    style="
-                      font-family: 'Space Grotesk', sans-serif;
-                      font-weight: 700;
-                      font-size: 24px;
-                      line-height: 64px;
-                      letter-spacing: 0%;
-                      color: #d9d9d9;
-                      display: block;
-                      transform: skew(25.08deg);
-                    "
-                    >Have Fun
-                  </span>
-                </div>
-              </div>
-              <!-- Apply left padding to match the alignment of the text above -->
-              <div class="pl-[85px]">
-                <span
-                  style="
-                    font-family: 'Space Grotesk', sans-serif;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 150%;
-                    letter-spacing: 0%;
-                    color: #d9d9d9;
-                    display: block;
-                    text-align: left;
-                  "
-                >
-                  Thank you for your online registrations. For each purchase you
-                  get points, which you can apply to our services and
-                  attractions then. We look forward to you!
-                </span>
-              </div>
-            </div>
-          </div>
+          </button>
         </div>
-      </section>
+      </div>
+    </div>
+    <!-- Step 2 description -->
+    <div class="relative pl-[50px] sm:pl-[85px]">
+      <span class="font-['Space_Grotesk'] font-normal text-sm sm:text-base text-[#d9d9d9] block text-left leading-relaxed sm:leading-[150%] w-full sm:w-[368px]">
+        You can register at the reception or by clicking the button
+        above from the comfort of your home.
+      </span>
+      <img
+        src="/images/qr.png"
+        alt="QR code"
+        width="128"
+        height="128"
+        class="absolute bottom-0 rounded-xl right-[10px] sm:right-[47px] xl:block hidden"
+      />
+    </div>
+  </div>
+  
+  <!-- Step 3 -->
+  <div class="flex flex-col gap-2">
+    <div class="flex gap-2 xl:w-[603.64px] w-[100%] h-[64px]" style="transform: skew(-25.08deg)">
+      <button class="xl:w-[49.5px] w-[10%] h-[50px] mt-[14px] rounded-lg" style="background: #29292980">
+        <span class="font-['Space_Grotesk'] font-bold text-3xl sm:text-4xl md:text-5xl xl:text-[72px] text-[#009fe3] block leading-none sm:leading-[50px]" style="transform: skew(25.08deg)">
+          3
+        </span>
+      </button>
+      <div class="rounded-lg flex-1 px-4 sm:px-7 flex items-center" style="background: #292929">
+        <span class="font-['Space_Grotesk'] font-bold text-lg sm:text-xl lg:text-2xl xl:text-[24px] text-[#d9d9d9] block" style="transform: skew(25.08deg)">
+          Have Fun
+        </span>
+      </div>
+    </div>
+    <!-- Step 3 description -->
+    <div class="pl-[50px] sm:pl-[85px]">
+      <span class="font-['Space_Grotesk'] font-normal text-sm sm:text-base text-[#d9d9d9] block text-left leading-relaxed sm:leading-[150%]">
+        Thank you for your online registrations. For each purchase you
+        get points, which you can apply to our services and
+        attractions then. We look forward to you!
+      </span>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
       <!-- Video section -->
       <section class="relative w-full px-6 bg-[#191919]">
         <div class="w-[80%] xl:w-[1280px] mx-auto flex flex-col gap-12 h-full">
@@ -698,29 +567,12 @@
         <div class="flex flex-col gap-12">
           <!-- Title -->
           <div class="flex lg:flex-row flex-col justify-between xl:w-[1280px] w-[90%] mx-auto">
-            <span
-              style="
-                font-family: Big Shoulders Text;
-                font-weight: 700;
-                font-size: 72px;
-                line-height: 100%;
-                letter-spacing: 0%;
-                text-transform: uppercase;
-                color: #d9d9d9;
-              "
-            >
+            <span class="font-['Big_Shoulders_Text'] font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[72px] leading-none uppercase text-[#d9d9d9]">
               OUR ATTRACTIONS
             </span>
             <div class="flex gap-6 items-center">
               <span
-                style="
-                  font-family: Space Grotesk;
-                  font-weight: 500;
-                  font-size: 16px;
-                  line-height: 100%;
-                  letter-spacing: 0%;
-                  color: #d9d9d9;
-                "
+                class="font-['Space_Grotesk'] font-medium text-xs sm:text-base text-[#d9d9d9] leading-none"
               >
                 Multiple activities at Fun Arena Cheb
               </span>
@@ -787,32 +639,17 @@
                   class="absolute right-8 top-1/2 transform -translate-y-1/2"
                 >
                   <span
-                    style="
-                      font-family: 'Big Shoulders Text', sans-serif;
-                      font-weight: 400;
-                      font-size: 32px;
-                      line-height: 100%;
-                      letter-spacing: 0%;
-                      text-align: right;
-                      text-transform: uppercase;
-                      transform: skew(25.25deg);
-                      display: block;
-                      color: #292929;
-                    "
+                    class="font-['Big_Shoulders_Text'] font-normal text-xl sm:text-2xl md:text-3xl xl:text-[32px] text-right uppercase block text-[#292929]"
+                    style="transform: skew(25.25deg); transform-origin: right center; display: inline-block;"
                   >
                     kartarena
                   </span>
                 </div>
               </div>
               <!-- option 2 -->
-              <div
-                class="xl:w-[120%] w-[90%] h-16 transform skew-x-[-25.25deg] bg-[#292929] overflow-hidden relative rounded-tl-[8px] rounded-tr-[20px] rounded-bl-[20px] translate-x-[10px]"
-              >
+              <div class="xl:w-[120%] w-[90%] h-16 transform skew-x-[-25.25deg] bg-[#292929] overflow-hidden relative rounded-tl-[8px] rounded-tr-[20px] rounded-bl-[20px] translate-x-[10px]">
                 <!-- Container cho hình ảnh và gradient overlay - using absolute width to match option 1 -->
-                <div
-                  class="w-[257.89px] h-full relative rounded-lg skew-x-[25.25deg]"
-                  style="width: calc(60% * 429.816px / 100%)"
-                >
+                <div class="w-[257.89px] h-full relative rounded-lg skew-x-[25.25deg]">
                   <!-- Hình ảnh gốc -->
                   <img
                     src="/images/image-2.png"
@@ -834,39 +671,24 @@
                 </div>
 
                 <!-- Phần text -->
-                <div
-                  class="absolute right-[34%] top-1/2 transform -translate-y-1/2"
-                >
+                <div class="absolute right-[34%] top-1/2 transform -translate-y-1/2">
                   <span
-                    style="
-                      font-family: 'Big Shoulders Text', sans-serif;
-                      font-weight: 400;
-                      font-size: 32px;
-                      line-height: 100%;
-                      letter-spacing: 0%;
-                      text-align: right;
-                      text-transform: uppercase;
-                      transform: skew(25.25deg);
-                      display: block;
-                      color: #d9d9d9;
-                    "
+                    class="font-['Big_Shoulders_Text'] font-normal text-xl sm:text-2xl md:text-3xl xl:text-[32px] text-right uppercase block text-[#d9d9d9]"
+                    style="transform: skew(25.25deg); transform-origin: right center; display: inline-block;"
                   >
                     jumparena
                   </span>
                 </div>
               </div>
+
               <!-- option 3 -->
-               <div
-                class="xl:w-[429.816px] w-[80%] h-16 transform skew-x-[-25.25deg] bg-[#D9D9D9] overflow-hidden relative rounded-tl-[8px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[8px] translate-x-[10px]"
-              >
+              <div class="xl:w-[429.816px] w-[80%] h-16 transform skew-x-[-25.25deg] bg-[#D9D9D9] overflow-hidden relative rounded-tl-[8px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[8px] translate-x-[10px]">
                 <!-- Container cho hình ảnh và gradient overlay -->
-                <div
-                  class="w-[60%] h-full relative rounded-lg skew-x-[25.25deg]"
-                >
+                <div class="w-[60%] h-full relative rounded-lg skew-x-[25.25deg]">
                   <!-- Hình ảnh gốc -->
                   <img
                     src="/images/image-3.jpg"
-                    alt="Option 1"
+                    alt="Option 3"
                     class="w-[329.73px] h-[99px] object-cover translate-y-[-16px] translate-x-[-20px] transform"
                   />
 
@@ -889,35 +711,22 @@
                   class="absolute right-8 top-1/2 transform -translate-y-1/2"
                 >
                   <span
-                    style="
-                      font-family: 'Big Shoulders Text', sans-serif;
-                      font-weight: 400;
-                      font-size: 32px;
-                      line-height: 100%;
-                      letter-spacing: 0%;
-                      text-align: right;
-                      text-transform: uppercase;
-                      transform: skew(25.25deg);
-                      display: block;
-                      color: #292929;
-                    "
+                    class="font-['Big_Shoulders_Text'] font-normal text-xl sm:text-2xl md:text-3xl xl:text-[32px] text-right uppercase block text-[#292929]"
+                    style="transform: skew(25.25deg); transform-origin: right center; display: inline-block;"
                   >
                     virtual reality
                   </span>
                 </div>
               </div>
+
               <!-- option 4 -->
-               <div
-                class="xl:w-[429.816px] w-[80%] h-16 transform skew-x-[-25.25deg] bg-[#D9D9D9] overflow-hidden relative rounded-tl-[8px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[8px] translate-x-[10px]"
-              >
+              <div class="xl:w-[429.816px] w-[80%] h-16 transform skew-x-[-25.25deg] bg-[#D9D9D9] overflow-hidden relative rounded-tl-[8px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[8px] translate-x-[10px]">
                 <!-- Container cho hình ảnh và gradient overlay -->
-                <div
-                  class="w-[60%] h-full relative rounded-lg skew-x-[25.25deg]"
-                >
+                <div class="w-[60%] h-full relative rounded-lg skew-x-[25.25deg]">
                   <!-- Hình ảnh gốc -->
                   <img
                     src="/images/image-4.jpg"
-                    alt="Option 1"
+                    alt="Option 4"
                     class="w-[329.73px] h-[99px] object-cover translate-y-[-16px] translate-x-[-20px] transform"
                   />
 
@@ -940,35 +749,22 @@
                   class="absolute right-8 top-1/2 transform -translate-y-1/2"
                 >
                   <span
-                    style="
-                      font-family: 'Big Shoulders Text', sans-serif;
-                      font-weight: 400;
-                      font-size: 32px;
-                      line-height: 100%;
-                      letter-spacing: 0%;
-                      text-align: right;
-                      text-transform: uppercase;
-                      transform: skew(25.25deg);
-                      display: block;
-                      color: #292929;
-                    "
+                    class="font-['Big_Shoulders_Text'] font-normal text-xl sm:text-2xl md:text-3xl xl:text-[32px] text-right uppercase block text-[#292929]"
+                    style="transform: skew(25.25deg); transform-origin: right center; display: inline-block;"
                   >
                     multiball
                   </span>
                 </div>
               </div>
+
               <!-- option 5 -->
-               <div
-                class="xl:w-[429.816px] w-[80%] h-16 transform skew-x-[-25.25deg] bg-[#D9D9D9] overflow-hidden relative rounded-tl-[8px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[8px] translate-x-[10px]"
-              >
+              <div class="xl:w-[429.816px] w-[80%] h-16 transform skew-x-[-25.25deg] bg-[#D9D9D9] overflow-hidden relative rounded-tl-[8px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[8px] translate-x-[10px]">
                 <!-- Container cho hình ảnh và gradient overlay -->
-                <div
-                  class="w-[60%] h-full relative rounded-lg skew-x-[25.25deg]"
-                >
+                <div class="w-[60%] h-full relative rounded-lg skew-x-[25.25deg]">
                   <!-- Hình ảnh gốc -->
                   <img
                     src="/images/image-5.png"
-                    alt="Option 1"
+                    alt="Option 5"
                     class="w-[329.73px] h-[99px] object-cover translate-y-[-16px] translate-x-[-20px] transform"
                   />
 
@@ -991,35 +787,22 @@
                   class="absolute right-8 top-1/2 transform -translate-y-1/2"
                 >
                   <span
-                    style="
-                      font-family: 'Big Shoulders Text', sans-serif;
-                      font-weight: 400;
-                      font-size: 32px;
-                      line-height: 100%;
-                      letter-spacing: 0%;
-                      text-align: right;
-                      text-transform: uppercase;
-                      transform: skew(25.25deg);
-                      display: block;
-                      color: #292929;
-                    "
+                    class="font-['Big_Shoulders_Text'] font-normal text-xl md:text-2xl xl:text-[32px] text-right uppercase block text-[#292929]"
+                    style="transform: skew(25.25deg); transform-origin: right center; display: inline-block;"
                   >
                     laser shooting range
                   </span>
                 </div>
               </div>
+
               <!-- option 6 -->
-               <div
-                class="xl:w-[429.816px] w-[80%] h-16 transform skew-x-[-25.25deg] bg-[#D9D9D9] overflow-hidden relative rounded-tl-[8px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[8px] translate-x-[10px]"
-              >
+              <div class="xl:w-[429.816px] w-[80%] h-16 transform skew-x-[-25.25deg] bg-[#D9D9D9] overflow-hidden relative rounded-tl-[8px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[8px] translate-x-[10px]">
                 <!-- Container cho hình ảnh và gradient overlay -->
-                <div
-                  class="w-[60%] h-full relative rounded-lg skew-x-[25.25deg]"
-                >
+                <div class="w-[60%] h-full relative rounded-lg skew-x-[25.25deg]">
                   <!-- Hình ảnh gốc -->
                   <img
                     src="/images/racing.png"
-                    alt="Option 1"
+                    alt="Option 6"
                     class="w-[329.73px] h-[99px] object-cover translate-y-[-16px] translate-x-[-20px] transform"
                   />
 
@@ -1042,18 +825,8 @@
                   class="absolute right-8 top-1/2 transform -translate-y-1/2"
                 >
                   <span
-                    style="
-                      font-family: 'Big Shoulders Text', sans-serif;
-                      font-weight: 400;
-                      font-size: 32px;
-                      line-height: 100%;
-                      letter-spacing: 0%;
-                      text-align: right;
-                      text-transform: uppercase;
-                      transform: skew(25.25deg);
-                      display: block;
-                      color: #292929;
-                    "
+                    class="font-['Big_Shoulders_Text'] font-normal text-xl md:text-2xl xl:text-[32px] text-right uppercase block text-[#292929]"
+                    style="transform: skew(25.25deg); transform-origin: right center; display: inline-block;"
                   >
                     company events
                   </span>
