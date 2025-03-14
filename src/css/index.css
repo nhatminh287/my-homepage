@@ -70,7 +70,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   white-space: nowrap;
-  transform: skew(-25.08deg) translateX(12px); /* Adjusted transform */
+  transform: skew(-25.08deg) translateX(12px); 
   display: flex;
   align-items: center;
   justify-content: center;
